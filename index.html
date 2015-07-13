@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The official Hello Fangaming website, home to Hello Fangaming's various games, and the Hello Mario Engine, an open source Mario engine!">
+	<meta name="author" content="Hello Fangaming">
+	<meta name="keywords" content="super, mario, bros, hello, engine, fan, game, maker, studio, fangame" />
+
+	<title>Hello Fangaming - Official Website</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<style>
+/* Global Styles */
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+a, a:active, a:focus {
+	outline: none;
+}
+
+.img-portfolio {
+	margin-bottom: 30px;
+}
+
+.img-hover:hover {
+	opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+	height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+	height: 100%;
+}
+
+header.carousel .fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Footer Styles */
+
+footer {
+	margin: 50px 0;
+}
+
+/* Random Stuff */
+
+.alphabox {
+	background:rgba(128,128,128,0.4);
+}
+
+.invisiwidth {
+	width: 100%;
+}
+
+.hovertext {
+	position:relative;
+	text-decoration:none;
+	text-align:center;
+}
+.hovertext:after {
+	content:attr(title);
+	position:absolute;
+	white-space: nowrap;
+	top:200%;
+	padding:0.5em 20px;
+	background:rgba(0,0,0,0.4);
+	text-decoration:none;
+	color:#fff;
+	opacity:0;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-o-transition:0.5s;
+	-ms-transition:0.5s;
+}
+.hovertext:hover:after,.hovertext:focus:after {
+	opacity: 1.0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+	.customer-img,
+	.img-related {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width:767px) {
+	.img-portfolio {
+		margin-bottom: 15px;
+	}
+
+	header.carousel .carousel {
+		height: 70%;
+	}
+}
+	</style>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body id="home">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand smoothscroll" href="#home"><i class="glyphicon glyphicon-off"></i> Hello Fangaming</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="smoothscroll" href="#games">Games</a>
+					</li>
+					<li>
+						<a class="smoothscroll" href="#opensource">Open Source</a>
+					</li>
+					<li>
+						<a href="http://hellofangamingforum.qc.to/">Forums</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">External Links <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="http://gamejolt.com/profile/hello-fangaming/6747/">Game Jolt Profile</a>
+							</li>
+							<li>
+								<a href="http://www.mfgg.net/index.php?act=user&param=09&c=2&st=0&o=&uid=2882">MFGG Profile</a>
+							</li>
+							<li>
+								<a href="http://www.youtube.com/c/HelloFangaming">YouTube Channel</a>
+							</li>
+							<li>
+								<a href="http://www.fusiongameworks.net/">Fusion Gameworks</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<!-- Header Carousel -->
+	<header id="myCarousel" class="carousel slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=One');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Hello Fangaming Collection</h2>
+					<h4>10 years of fangaming!</h4>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Two');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Hello Mario Engine</h2>
+					<h4>Create your own Mario game using this engine for GameMaker: Studio!</h4>
+					<a href="http://hellofangaming.github.io/HelloMarioEngine/" class="btn btn-default">Learn More</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Three');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Super Mario Dynamo</h2>
+					<h4>Hardcore platforming and wall jumps!</h4>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Four');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Super Mario Eclipse</h2>
+					<h4>A colorful Mario platformer with challenging puzzles!</h4>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Five');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Super Mario Bros: Ztar Turmoil</h2>
+					<h4>Mario with guns! And blood!</h4>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<p></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</header>
+
+	<!-- Page Content -->
+	<div class="container">
+
+		<!-- Info Section -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="page-header">Hello Fangaming</h2>
+			</div>
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="glyphicon glyphicon-info-sign"></i> Welcome</h4>
+					</div>
+					<div class="panel-body">
+						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, open source projects, and more!</p>
+						<p>This page is a WIP. Go to <a href="http://hellofangaming.qc.to/">http://hellofangaming.qc.to/</a> for the official website.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="glyphicon glyphicon-stats"></i> Poll</h4>
+					</div>
+					<div class="panel-body">
+						<p>Poll goes here.</p>
+						<p><a href="#" data-toggle="modal" data-target="#pollModal">Previous Polls</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.row -->
+		<hr id="games">
+		<!-- Games Section -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="page-header">Games</h2>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Super Mario Dynamo" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Super Mario Eclipse" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Yoshi Tanks" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="#" title="Older Games" data-toggle="modal" data-target="#hfcModal">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- /.row -->
+		<hr id="opensource">
+		<!-- Open Source Section -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="page-header">Open Source</h2>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a class="hovertext" href="http://hellofangaming.github.io/HelloMarioEngine/" title="Hello Mario Engine">
+					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- /.row -->
+		<hr>
+		<!-- Footer -->
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="pull-right"><a class="glyphicon glyphicon-chevron-up smoothscroll" href="#home"></a></p>
+					<p>2006-<script>var d = new Date(); document.write(d.getFullYear());</script> Hello Fangaming</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- /.container -->
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<!-- Smooth Scroller -->
+	<script>
+	$(function() {
+		$('.smoothscroll').click(function() {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+				scrollTop: target.offset().top
+				}, 500);
+				return false;
+			}
+		});
+	});
+	</script>
+
+	<!-- Script to Activate the Carousel -->
+	<script>
+	$('.carousel').carousel({
+		interval: 5000 //changes the speed
+	})
+	</script>
+	
+	<!-- Poll Modal -->
+	<div class="modal fade" id="pollModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Previous Polls</h4>
+				</div>
+				<div class="modal-body">
+					<p>Some text in the modal.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Game Modal -->
+	<div class="modal fade" id="hfcModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Game</h4>
+				</div>
+				<div class="modal-body">
+					<p>Some text in the modal.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Download</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+
+</html>
