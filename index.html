@@ -32,6 +32,22 @@ a, a:active, a:focus {
 	outline: none;
 }
 
+.page-header {
+	color: #A94442;
+}
+
+a {
+	color: #A94442;
+}
+
+a:hover, a:active {
+	color: #401A1A;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
 .img-portfolio {
 	margin-bottom: 30px;
 }
@@ -57,18 +73,94 @@ header.carousel .fill {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
+	image-rendering: pixelated;
+}
+
+/* Header Styles */
+
+.navbar-default {
+  background-color: #880000;
+  border-color: #660000;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ee0000;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ee0000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ee0000;
+  background-color: #660000;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ee0000;
+  background-color: #660000;
+}
+.navbar-default .navbar-toggle {
+  border-color: #660000;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #660000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #ee0000;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ee0000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ee0000;
+    background-color: #660000;
+  }
 }
 
 /* Footer Styles */
 
-footer {
-	margin: 50px 0;
+.footer-in {
+	margin: 15px 0;
+	color: #ffffff;
+}
+
+.footer-in a {
+	color: #ffffff;
+}
+
+.footer-in a:hover {
+	color: #ee0000;
+}
+
+.footer-red {
+	background-color: #880000;
 }
 
 /* Random Stuff */
 
 .alphabox {
-	background:rgba(128,128,128,0.4);
+	background:rgba(169,68,66,0.4);
 }
 
 .invisiwidth {
@@ -81,12 +173,13 @@ footer {
 	text-align:center;
 }
 .hovertext:after {
-	content:attr(title);
+	content:attr(name);
 	position:absolute;
 	white-space: nowrap;
-	top:200%;
+	top:35px;
 	padding:0.5em 20px;
-	background:rgba(0,0,0,0.4);
+	font-weight: bold;
+	background:rgba(169,68,66,0.4);
 	text-decoration:none;
 	color:#fff;
 	opacity:0;
@@ -133,12 +226,12 @@ footer {
 <body id="home">
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -259,7 +352,7 @@ footer {
 				<h2 class="page-header">Hello Fangaming</h2>
 			</div>
 			<div class="col-md-9">
-				<div class="panel panel-default">
+				<div class="panel panel-danger">
 					<div class="panel-heading">
 						<h4><i class="glyphicon glyphicon-info-sign"></i> Welcome</h4>
 					</div>
@@ -270,7 +363,7 @@ footer {
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="panel panel-default">
+				<div class="panel panel-danger">
 					<div class="panel-heading">
 						<h4><i class="glyphicon glyphicon-stats"></i> Poll</h4>
 					</div>
@@ -289,47 +382,47 @@ footer {
 				<h2 class="page-header">Games</h2>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Super Mario Dynamo" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Super Mario Eclipse" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Yoshi Tanks" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" title="Older Games" data-toggle="modal" data-target="#hfcModal">
+				<a class="hovertext" href="#" name="Older Games" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
@@ -342,25 +435,27 @@ footer {
 				<h2 class="page-header">Open Source</h2>
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="http://hellofangaming.github.io/HelloMarioEngine/" title="Hello Mario Engine">
+				<a class="hovertext" href="http://hellofangaming.github.io/HelloMarioEngine/" name="Hello Mario Engine">
 					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
 				</a>
 			</div>
 		</div>
 		<!-- /.row -->
-		<hr>
-		<!-- Footer -->
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="pull-right"><a class="glyphicon glyphicon-chevron-up smoothscroll" href="#home"></a></p>
-					<p>2006-<script>var d = new Date(); document.write(d.getFullYear());</script> Hello Fangaming</p>
-				</div>
-			</div>
-		</footer>
-
+		<h2 class="page-header"></h2>
 	</div>
 	<!-- /.container -->
+	
+	<!-- Footer -->
+	<div class="footer-red">
+		<div class="container">
+			<div class="row footer-in">
+				<div class="col-lg-12">
+					<p class="pull-right"><a class="glyphicon glyphicon-chevron-up smoothscroll" href="#home"></a></p>
+					<p><strong>2006-<script>var d = new Date(); document.write(d.getFullYear());</script> Hello Fangaming</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
