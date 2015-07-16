@@ -22,6 +22,7 @@
 html,
 body {
 	height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 body {
@@ -52,12 +53,8 @@ a:hover, a:visited, a:link, a:active {
 	text-decoration: none;
 }
 
-.img-portfolio {
-	margin-bottom: 30px;
-}
-
-.img-hover:hover {
-	opacity: 0.8;
+hr {
+	visibility: hidden;
 }
 
 /* Home Page Carousel */
@@ -83,63 +80,75 @@ header.carousel .fill {
 /* Header Styles */
 
 .navbar-default {
-  background-color: #880000;
-  border-color: #660000;
+	background-color: #880000;
+	border-color: #660000;
 }
+
 .navbar-default .navbar-brand {
-  color: #ffffff;
+	color: #ffffff;
 }
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #ee0000;
+	color: #ee0000;
 }
+
 .navbar-default .navbar-text {
-  color: #ffffff;
+	color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+	color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ee0000;
+	color: #ee0000;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #ee0000;
-  background-color: #660000;
+	color: #ee0000;
+	background-color: #660000;
 }
+
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #ee0000;
-  background-color: #660000;
+	color: #ee0000;
+	background-color: #660000;
 }
+
 .navbar-default .navbar-toggle {
-  border-color: #660000;
+	border-color: #660000;
 }
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #660000;
+	background-color: #660000;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #ffffff;
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #ffffff;
 }
+
 .navbar-default .navbar-link {
-  color: #ffffff;
+	color: #ffffff;
 }
+
 .navbar-default .navbar-link:hover {
-  color: #ee0000;
+	color: #ee0000;
 }
 
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ee0000;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ee0000;
-    background-color: #660000;
-  }
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ee0000;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #ee0000;
+		background-color: #660000;
+	}
 }
 
 /* Footer Styles */
@@ -171,16 +180,36 @@ header.carousel .fill {
 	width: 100%;
 }
 
-.hovertext {
-	position:relative;
-	text-decoration:none;
-	text-align:center;
+.img-fill {
+	width: 100%;
 }
+
+.gallery-item {
+	background-color: #880000;
+	padding: 2px;
+	opacity: 0.6;
+}
+
+.gallery-item:hover {
+	opacity: 1.0;
+}
+
+.gallery-item-outer {
+	padding: 10px;
+}
+
+.gallery-image {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .hovertext:after {
 	content:attr(name);
 	position:absolute;
 	white-space: nowrap;
-	top:35px;
+	top:30px;
 	padding:0.5em 20px;
 	font-weight: bold;
 	background:rgba(169,68,66,0.4);
@@ -304,7 +333,7 @@ header.carousel .fill {
 				<div class="fill" style="background-image:url('img/carousel/hmeCarousel.png');"></div>
 				<div class="carousel-caption alphabox">
 					<h2>Hello Mario Engine</h2>
-					<h4>Create your own Mario game using this engine for GameMaker: Studio!</h4>
+					<h4>Create your own Mario games using this engine for GameMaker: Studio!</h4>
 					<a href="http://hellofangaming.github.io/HelloMarioEngine/" class="btn btn-default">Learn More</a>
 					<p></p>
 				</div>
@@ -314,7 +343,7 @@ header.carousel .fill {
 				<div class="carousel-caption alphabox">
 					<h2>Super Mario Dynamo</h2>
 					<h4>Hardcore platforming and wall jumps!</h4>
-					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#smdModal">Learn More</a>
 					<p></p>
 				</div>
 			</div>
@@ -323,7 +352,7 @@ header.carousel .fill {
 				<div class="carousel-caption alphabox">
 					<h2>Super Mario Eclipse</h2>
 					<h4>A colorful Mario platformer with challenging puzzles!</h4>
-					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#smeModal">Learn More</a>
 					<p></p>
 				</div>
 			</div>
@@ -332,7 +361,7 @@ header.carousel .fill {
 				<div class="carousel-caption alphabox">
 					<h2>Super Mario Bros: Ztar Turmoil</h2>
 					<h4>Mario with guns! And blood!</h4>
-					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#hfcModal">Learn More</a>
+					<a href="#" class="btn btn-default" data-toggle="modal" data-target="#smbztModal">Learn More</a>
 					<p></p>
 				</div>
 			</div>
@@ -362,7 +391,7 @@ header.carousel .fill {
 					</div>
 					<div class="panel-body">
 						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, open source projects, and more!</p>
-						<p>This page is a WIP. Go to <a href="http://hellofangaming.qc.to/">http://hellofangaming.qc.to/</a> for the official website.</p>
+						<p>This page is a WIP. Go to <a href="http://hellofangaming.qc.to/">http://hellofangaming.qc.to/</a> for the current official website.</p>
 					</div>
 				</div>
 			</div>
@@ -385,51 +414,51 @@ header.carousel .fill {
 			<div class="col-lg-12">
 				<h2 class="page-header">Games</h2>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 				<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+					<img class="img-responsive gallery-image" src="img/hfc.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#smdModal">
+					<img class="img-responsive gallery-image" src="img/smd.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#smeModal">
+					<img class="img-responsive gallery-image" src="img/sme.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#ytModal">
+					<img class="img-responsive gallery-image" src="img/ytanks.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#smbztModal">
+					<img class="img-responsive gallery-image" src="img/smbzt.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#smbmmModal">
+					<img class="img-responsive gallery-image" src="img/smbmm.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#smbrrModal">
+					<img class="img-responsive gallery-image" src="img/smbrr.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hwmg09Modal">
+					<img class="img-responsive gallery-image" src="img/hwmg09.png" alt="">
 				</a>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<a class="hovertext" href="#" name="Older Games" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+			</div></div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Older Games" data-toggle="modal" data-target="#oldgameModal">
+					<img class="img-responsive gallery-image" src="img/oldgames.png" alt="">
 				</a>
-			</div>
+			</div></div>
 		</div>
 		<!-- /.row -->
 		<hr id="opensource">
@@ -438,14 +467,14 @@ header.carousel .fill {
 			<div class="col-lg-12">
 				<h2 class="page-header">Open Source</h2>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 				<a class="hovertext" href="http://hellofangaming.github.io/HelloMarioEngine/" name="Hello Mario Engine">
-					<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+					<img class="img-responsive gallery-image" src="img/hme.png" alt="">
 				</a>
-			</div>
+			</div></div>
 		</div>
 		<!-- /.row -->
-		<h2 class="page-header"></h2>
+		<hr>
 	</div>
 	<!-- /.container -->
 	
@@ -511,7 +540,7 @@ header.carousel .fill {
 		</div>
 	</div>
 	
-	<!-- Game Modal -->
+	<!-- HFC Modal -->
 	<div class="modal fade" id="hfcModal" role="dialog">
 		<div class="modal-dialog modal-lg">
 		
@@ -519,13 +548,214 @@ header.carousel .fill {
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Game</h4>
+					<h4 class="modal-title">Hello Fangaming Collection</h4>
 				</div>
 				<div class="modal-body">
-					<p>Some text in the modal.</p>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/Jj_aDBvnDpA?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>Join Mario and Luigi on their adventure in this ten year anniversary collection! This collection includes an assortment of remastered levels handpicked from a wide variety of fangames released by Hello Fangaming between 2006-2016.</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-success">Download</button>
+					<button type="button" class="btn btn-success">Coming Soon!</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Dynamo Modal -->
+	<div class="modal fade" id="smdModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Super Mario Dynamo</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/7_FZqoKFBTA?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>The people of the Mushroom Kingdom have finally embraced industrialization, and it is all thanks to everyone's favorite plumber, Luigi! Unfortunately, Luigi's greed got the best of him, and the entire kingdom became shrouded in darkness. The thick smog emanating from Luigi's accomplishments have darkened the once bright and colorful kingdom. It is now up to Mario to try and solve this dilemma!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/super-mario-dynamo/37100" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Eclipse Modal -->
+	<div class="modal fade" id="smeModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Super Mario Eclipse</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/s9fRD7lNqHQ?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>The eclipse stars, a source of mythical powers, have been unleashed upon the world. As a result, the entire Mushroom Kingdom has been shrouded in the shadows of an everlasting eclipse. It is up to Mario to collect these stars, and save everyone from an eternal twilight.</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/super-mario-eclipse/19591" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- YTanks Modal -->
+	<div class="modal fade" id="ytModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Yoshi Tanks</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/EgHD2mh-i1E?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>In Yoshi Tanks, the aim of the game is to take out all of your opponent tanks, whether they are your friends, or AI controlled.</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/yoshi-tanks/17428" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Ztar Modal -->
+	<div class="modal fade" id="smbztModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Super Mario Bros: Ztar Turmoil</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/i2ACsdYqk8k?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>A dark force has begun to sweep over the Mushroom Kingdom. Guns have been introduced into the world mysteriously, and are being used to bring about death and destruction. It is up to Mario (or Luigi) to save the Mushroom Kingdom from the Ztars.</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/super-mario-bros-ztar-turmoil/10586" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Mythical Mushrooms Modal -->
+	<div class="modal fade" id="smbmmModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Super Mario Bros: Mythical Mushrooms</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/P4MVYpVPX-U?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>There is a legend that tells of five mythical mushrooms of untold power. Mario sets off on a journey to collect these mushrooms in this challenging metroidvania platformer.</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/super-mario-bros-mythical-mushrooms/6401" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Restless Reality Modal -->
+	<div class="modal fade" id="smbrrModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Super Mario Bros: Restless Reality</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/6_Itfg1XuRY?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>Many years have passed since the Mario Bros last defeated Bowser and stopped his plans for world domination. The Mushroom Kingdom enjoyed years of peace. Until one day... Bowser is up to no good again! He is invading the once peaceful kingdom, and setting up forts! What could he be planning!? Mario must travel through many different locations to find out what Bowser is up to and stop his evil plans!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/super-mario-bros-restless-reality/4782" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- HWMG2009 Modal -->
+	<div class="modal fade" id="hwmg09Modal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Hello Winter Mario Games 2009</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/i7MaThbDuKA?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>This winter game includes winter remakes of Super Luigi Paradise and Mario's Run. In addition to this, extra new levels have been added.</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/hello-winter-mario-games-2009/4781" class="btn btn-success">Download on Game Jolt</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Older Games Modal -->
+	<div class="modal fade" id="oldgameModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Older Games</h4>
+				</div>
+				<div class="modal-body">
+					<img class="img-responsive img-fill" src="img/oldgames.png" alt="">
+					<p>Looking for one of Hello Fangaming's older games? They are all still available for download on MFGG!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://www.mfgg.net/index.php?act=user&param=09&c=2&st=0&o=&uid=2882" class="btn btn-success">Old Games on MFGG</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
