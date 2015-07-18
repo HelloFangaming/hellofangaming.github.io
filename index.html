@@ -184,6 +184,14 @@ header.carousel .fill {
 	width: 100%;
 }
 
+.panel {
+	opacity: 0.8;
+}
+
+.panel:hover {
+	opacity: 1.0;
+}
+
 .gallery-item {
 	background-color: #880000;
 	padding: 2px;
@@ -296,6 +304,9 @@ header.carousel .fill {
 								<a href="http://www.youtube.com/c/HelloFangaming">YouTube Channel</a>
 							</li>
 							<li>
+								<a href="https://twitter.com/HelloFangaming">Twitter Account</a>
+							</li>
+							<li>
 								<a href="http://www.fusiongameworks.net/">Fusion Gameworks</a>
 							</li>
 						</ul>
@@ -390,7 +401,7 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-info-sign"></i> Welcome</h4>
 					</div>
 					<div class="panel-body">
-						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, open source projects, and more!</p>
+						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, open source projects, and more! Want to play some fangames? Check out the selection of games below! Interested in making your own fangames? Check out the open source section! Want to leave feedback? Vote in the poll to the right, or visit the forums!</p>
 						<p>This page is a WIP. Go to <a href="http://hellofangaming.qc.to/">http://hellofangaming.qc.to/</a> for the current official website.</p>
 					</div>
 				</div>
@@ -401,7 +412,8 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-stats"></i> Poll</h4>
 					</div>
 					<div class="panel-body">
-						<p>Poll goes here.</p>
+						<!--<p>Do you like the new Hello Fangaming website?</p>
+						<iframe src="http://hellofangamingforum.qc.to/pollscript/" width="100%" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>-->
 						<p><a href="#" data-toggle="modal" data-target="#pollModal">Previous Polls</a></p>
 					</div>
 				</div>
@@ -519,6 +531,16 @@ header.carousel .fill {
 	})
 	</script>
 	
+	<!-- Google Analytics -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-60777521-2', 'auto');
+  ga('send', 'pageview');
+	</script>
+	
 	<!-- Poll Modal -->
 	<div class="modal fade" id="pollModal" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -530,7 +552,7 @@ header.carousel .fill {
 					<h4 class="modal-title">Previous Polls</h4>
 				</div>
 				<div class="modal-body">
-					<p>Some text in the modal.</p>
+					<p>Information on previous polls will be added here on a later date.</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
