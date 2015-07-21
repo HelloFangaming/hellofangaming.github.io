@@ -1,0 +1,1482 @@
+{
+	"pollresults": [
+		{
+			"question": "What do you prefer to use to make games?",
+			"total": 9,
+			"results": [
+				{
+					"answer": "Game Maker",
+					"vote": 6
+				},
+				{
+					"answer": "RPG Maker",
+					"vote": 2
+				},
+				{
+					"answer": "Multimedia Fusion/Games Factory",
+					"vote": 1
+				},
+				{
+					"answer": "Code (Ex: C++)",
+					"vote": 0
+				},
+				{
+					"answer": "Other",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What is your favorite minigame from Hello?",
+			"total": 24,
+			"results": [
+				{
+					"answer": "Present Panic",
+					"vote": 5
+				},
+				{
+					"answer": "Bowser's Recruitment",
+					"vote": 5
+				},
+				{
+					"answer": "A Koopa's Adventure",
+					"vote": 5
+				},
+				{
+					"answer": "Super Mario Subpop",
+					"vote": 3
+				},
+				{
+					"answer": "Yoshi Click and Go",
+					"vote": 3
+				},
+				{
+					"answer": "Save the Goombas",
+					"vote": 2
+				},
+				{
+					"answer": "Mario the Mathematician",
+					"vote": 1
+				},
+				{
+					"answer": "Mario's Run",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What is your favorite fangame out of the following?",
+			"total": 37,
+			"results": [
+				{
+					"answer": "SMB: Shine Expedition",
+					"vote": 14
+				},
+				{
+					"answer": "Super Luigi and the Golden Shrooms",
+					"vote": 7
+				},
+				{
+					"answer": "SMB: Revenge of Bowser",
+					"vote": 6
+				},
+				{
+					"answer": "SMB: Kingdom Troubles",
+					"vote": 4
+				},
+				{
+					"answer": "SMB: Fierce Days",
+					"vote": 2
+				},
+				{
+					"answer": "SMB: Shine Pursuit",
+					"vote": 2
+				},
+				{
+					"answer": "SMB: Dual Dash",
+					"vote": 1
+				},
+				{
+					"answer": "SMB: Crimson Hours",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "What type of Mario fangame do you like the best?",
+			"total": 36,
+			"results": [
+				{
+					"answer": "Platformer",
+					"vote": 29
+				},
+				{
+					"answer": "RPG",
+					"vote": 6
+				},
+				{
+					"answer": "Puzzle",
+					"vote": 1
+				},
+				{
+					"answer": "Shooter",
+					"vote": 0
+				},
+				{
+					"answer": "Other",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What is your favorite powerup?",
+			"total": 41,
+			"results": [
+				{
+					"answer": "Hammer Suit",
+					"vote": 9
+				},
+				{
+					"answer": "Cape Feather",
+					"vote": 8
+				},
+				{
+					"answer": "Fire Flower",
+					"vote": 6
+				},
+				{
+					"answer": "Blue Shell",
+					"vote": 6
+				},
+				{
+					"answer": "Yoshi",
+					"vote": 5
+				},
+				{
+					"answer": "Tanooki Suit",
+					"vote": 3
+				},
+				{
+					"answer": "Other",
+					"vote": 3
+				},
+				{
+					"answer": "Leaf",
+					"vote": 1
+				},
+				{
+					"answer": "Frog Suit",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What is your favorite Mario game?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "Super Mario Galaxy",
+					"vote": 8
+				},
+				{
+					"answer": "Super Mario Bros. 3",
+					"vote": 7
+				},
+				{
+					"answer": "Super Mario Bros. 2 (USA)",
+					"vote": 3
+				},
+				{
+					"answer": "Super Mario World",
+					"vote": 3
+				},
+				{
+					"answer": "Super Mario Sunshine",
+					"vote": 3
+				},
+				{
+					"answer": "Super Mario Bros.",
+					"vote": 2
+				},
+				{
+					"answer": "Super Mario 64",
+					"vote": 2
+				},
+				{
+					"answer": "New Super Mario Bros.",
+					"vote": 2
+				},
+				{
+					"answer": "Super Mario Bros. 2 (J)",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "What do you think of the fangame Super Mario Bros: Bloody Battles?",
+			"total": 32,
+			"results": [
+				{
+					"answer": "Awesome",
+					"vote": 12
+				},
+				{
+					"answer": "Ewwww",
+					"vote": 12
+				},
+				{
+					"answer": "Good",
+					"vote": 5
+				},
+				{
+					"answer": "Okay",
+					"vote": 2
+				},
+				{
+					"answer": "Not so good",
+					"vote": 1
+				},
+				{
+					"answer": "Bad",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Do you like making levels?",
+			"total": 32,
+			"results": [
+				{
+					"answer": "Of course!",
+					"vote": 23
+				},
+				{
+					"answer": "Yes",
+					"vote": 8
+				},
+				{
+					"answer": "Boring!",
+					"vote": 1
+				},
+				{
+					"answer": "Maybe",
+					"vote": 0
+				},
+				{
+					"answer": "A little.",
+					"vote": 0
+				},
+				{
+					"answer": "No",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What level of difficulty do you like in games?",
+			"total": 36,
+			"results": [
+				{
+					"answer": "Hard",
+					"vote": 18
+				},
+				{
+					"answer": "Normal",
+					"vote": 14
+				},
+				{
+					"answer": "Very Hard",
+					"vote": 3
+				},
+				{
+					"answer": "Very Easy",
+					"vote": 1
+				},
+				{
+					"answer": "Easy",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What do you think is the most important part of a game?",
+			"total": 33,
+			"results": [
+				{
+					"answer": "Gameplay",
+					"vote": 30
+				},
+				{
+					"answer": "Graphics",
+					"vote": 2
+				},
+				{
+					"answer": "Length",
+					"vote": 1
+				},
+				{
+					"answer": "Sound",
+					"vote": 0
+				},
+				{
+					"answer": "Story",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Which of these object collecting fangames do you like the best?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "Super Mario Bros: Shine Expedition",
+					"vote": 21
+				},
+				{
+					"answer": "Super Luigi and the Golden Shrooms",
+					"vote": 7
+				},
+				{
+					"answer": "Super Mario Bros: Shine Pursuit",
+					"vote": 2
+				},
+				{
+					"answer": "Super Mario Bros: Coin Quest",
+					"vote": 1
+				},
+				{
+					"answer": "Super Mario Greetings",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Are you excited for NCFC?",
+			"total": 28,
+			"results": [
+				{
+					"answer": "What is NCFC?",
+					"vote": 22
+				},
+				{
+					"answer": "Yes",
+					"vote": 4
+				},
+				{
+					"answer": "I can't wait!",
+					"vote": 2
+				},
+				{
+					"answer": "No",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What was your favorite Mario fangame released at NCFC?",
+			"total": 29,
+			"results": [
+				{
+					"answer": "Super Mario Bros: Seeking Sunshine",
+					"vote": 13
+				},
+				{
+					"answer": "Normal Super Mario Bros. 3",
+					"vote": 10
+				},
+				{
+					"answer": "Mushroom Patrol & The Midas Machine",
+					"vote": 2
+				},
+				{
+					"answer": "Mario: A Halloween Tale",
+					"vote": 2
+				},
+				{
+					"answer": "Metal Gear Mario",
+					"vote": 1
+				},
+				{
+					"answer": "Mushroom Kingdom Emissary",
+					"vote": 1
+				},
+				{
+					"answer": "Mario Learns About Colors 2",
+					"vote": 0
+				},
+				{
+					"answer": "Other",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What kind of fangame do you want to see from Hello next?",
+			"total": 36,
+			"results": [
+				{
+					"answer": "Exploration",
+					"vote": 14
+				},
+				{
+					"answer": "Point A to Point B",
+					"vote": 7
+				},
+				{
+					"answer": "Shooting",
+					"vote": 5
+				},
+				{
+					"answer": "All of them!",
+					"vote": 5
+				},
+				{
+					"answer": "Object Collecting",
+					"vote": 3
+				},
+				{
+					"answer": "None",
+					"vote": 2
+				},
+				{
+					"answer": "Puzzle",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Did you get Game Maker 8?",
+			"total": 34,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 23
+				},
+				{
+					"answer": "No",
+					"vote": 7
+				},
+				{
+					"answer": "It's Out?",
+					"vote": 3
+				},
+				{
+					"answer": "What is Game Maker?",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "Do you like the Hello Engine 4?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "It's Amazing",
+					"vote": 29
+				},
+				{
+					"answer": "It's Great",
+					"vote": 6
+				},
+				{
+					"answer": "It's Bad",
+					"vote": 3
+				},
+				{
+					"answer": "It's Good",
+					"vote": 1
+				},
+				{
+					"answer": "What?",
+					"vote": 1
+				},
+				{
+					"answer": "It's Okay",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Do you like the graphics used in Hello's games?",
+			"total": 41,
+			"results": [
+				{
+					"answer": "I love them!",
+					"vote": 18
+				},
+				{
+					"answer": "Yes",
+					"vote": 13
+				},
+				{
+					"answer": "Maybe",
+					"vote": 10
+				},
+				{
+					"answer": "No",
+					"vote": 0
+				},
+				{
+					"answer": "They are ugly!",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Is the Hello Engine 4 easy to use?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 14
+				},
+				{
+					"answer": "It's hard to use!",
+					"vote": 8
+				},
+				{
+					"answer": "It takes no effort to use!",
+					"vote": 6
+				},
+				{
+					"answer": "Maybe",
+					"vote": 6
+				},
+				{
+					"answer": "No",
+					"vote": 3
+				},
+				{
+					"answer": "Never used it.",
+					"vote": 3
+				}
+			]
+		},
+		{
+			"question": "Do you enjoy making games?",
+			"total": 42,
+			"results": [
+				{
+					"answer": "I love making games!",
+					"vote": 27
+				},
+				{
+					"answer": "Yes",
+					"vote": 7
+				},
+				{
+					"answer": "I never made a game before...",
+					"vote": 7
+				},
+				{
+					"answer": "Maybe",
+					"vote": 1
+				},
+				{
+					"answer": "No",
+					"vote": 0
+				},
+				{
+					"answer": "I hate making games!",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Do you prefer 2D or 3D platformers?",
+			"total": 52,
+			"results": [
+				{
+					"answer": "2D Platformers",
+					"vote": 25
+				},
+				{
+					"answer": "2D Platformers with 3D Graphics",
+					"vote": 13
+				},
+				{
+					"answer": "3D Platformers",
+					"vote": 6
+				},
+				{
+					"answer": "I don't care",
+					"vote": 6
+				},
+				{
+					"answer": "3D Platformers with 2D Graphics",
+					"vote": 2
+				}
+			]
+		},
+		{
+			"question": "Do you think Super Mario All Stars graphics are overused in fangames?",
+			"total": 63,
+			"results": [
+				{
+					"answer": "Yes, and I am sick of them!",
+					"vote": 27
+				},
+				{
+					"answer": "Yes, but they still look good!",
+					"vote": 25
+				},
+				{
+					"answer": "No, and more fangames should use them!",
+					"vote": 6
+				},
+				{
+					"answer": "Not sure.",
+					"vote": 5
+				},
+				{
+					"answer": "No, but they look terrible!",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Have you ever made a game with the Hello Engine 4?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "No, and I am not interested in doing so.",
+					"vote": 15
+				},
+				{
+					"answer": "No, but I want to.",
+					"vote": 12
+				},
+				{
+					"answer": "Yes, but I never released it...",
+					"vote": 9
+				},
+				{
+					"answer": "Yes, and I released it!",
+					"vote": 4
+				},
+				{
+					"answer": "What is the Hello Engine 4?",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Do you like Super Mario Bros: Restless Reality?",
+			"total": 45,
+			"results": [
+				{
+					"answer": "It is your best fangame!",
+					"vote": 14
+				},
+				{
+					"answer": "I liked it!",
+					"vote": 13
+				},
+				{
+					"answer": "I didn't like it!",
+					"vote": 13
+				},
+				{
+					"answer": "I never played it...",
+					"vote": 4
+				},
+				{
+					"answer": "It was okay.",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "Did you find the SMB:RR \"secret\" on this website?",
+			"total": 30,
+			"results": [
+				{
+					"answer": "No...",
+					"vote": 15
+				},
+				{
+					"answer": "Yes, it was awesome!",
+					"vote": 13
+				},
+				{
+					"answer": "Yes, but it was useless!",
+					"vote": 2
+				}
+			]
+		},
+		{
+			"question": "What do you think the Hello Engine 4 needs more of?",
+			"total": 54,
+			"results": [
+				{
+					"answer": "Interactive Items",
+					"vote": 16
+				},
+				{
+					"answer": "Characters",
+					"vote": 12
+				},
+				{
+					"answer": "Powerups",
+					"vote": 10
+				},
+				{
+					"answer": "Enemies",
+					"vote": 10
+				},
+				{
+					"answer": "Mapscreen Stuff",
+					"vote": 6
+				}
+			]
+		},
+		{
+			"question": "What is your favorite kind of Mario level?",
+			"total": 64,
+			"results": [
+				{
+					"answer": "Pipe Maze",
+					"vote": 16
+				},
+				{
+					"answer": "Ice",
+					"vote": 15
+				},
+				{
+					"answer": "Grassland",
+					"vote": 11
+				},
+				{
+					"answer": "Sky",
+					"vote": 8
+				},
+				{
+					"answer": "Cave",
+					"vote": 5
+				},
+				{
+					"answer": "Airship",
+					"vote": 3
+				},
+				{
+					"answer": "Other",
+					"vote": 3
+				},
+				{
+					"answer": "Castle",
+					"vote": 2
+				},
+				{
+					"answer": "Desert",
+					"vote": 1
+				},
+				{
+					"answer": "Water",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Do you like Super Mario Bros: Game Master?",
+			"total": 37,
+			"results": [
+				{
+					"answer": "It is amazing!",
+					"vote": 18
+				},
+				{
+					"answer": "I like it.",
+					"vote": 9
+				},
+				{
+					"answer": "What happened to Level Master?",
+					"vote": 5
+				},
+				{
+					"answer": "I don't care for it.",
+					"vote": 4
+				},
+				{
+					"answer": "I hate it!",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "How many fangames do you think Hello will release in 2011?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "3-5",
+					"vote": 17
+				},
+				{
+					"answer": "2",
+					"vote": 8
+				},
+				{
+					"answer": "6-10",
+					"vote": 6
+				},
+				{
+					"answer": "More than 10",
+					"vote": 5
+				},
+				{
+					"answer": "1",
+					"vote": 4
+				},
+				{
+					"answer": "None",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Did you like playing the levels uploaded to gamemaster.qc.to?",
+			"total": 34,
+			"results": [
+				{
+					"answer": "All of the levels are awesome!",
+					"vote": 10
+				},
+				{
+					"answer": "I never played any of them.",
+					"vote": 9
+				},
+				{
+					"answer": "Most of them are great.",
+					"vote": 6
+				},
+				{
+					"answer": "I didn't like the levels I played.",
+					"vote": 6
+				},
+				{
+					"answer": "Only a few levels were good.",
+					"vote": 3
+				}
+			]
+		},
+		{
+			"question": "Do you want to see a Hello Engine 5?",
+			"total": 29,
+			"results": [
+				{
+					"answer": "Yes!",
+					"vote": 16
+				},
+				{
+					"answer": "I need it!",
+					"vote": 8
+				},
+				{
+					"answer": "Maybe...",
+					"vote": 3
+				},
+				{
+					"answer": "I don't care...",
+					"vote": 2
+				},
+				{
+					"answer": "No!",
+					"vote": 0
+				},
+				{
+					"answer": "Please don't!",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Are you satisfied with the Hello Engine 5?",
+			"total": 42,
+			"results": [
+				{
+					"answer": "It's perfect!",
+					"vote": 18
+				},
+				{
+					"answer": "I don't like it.",
+					"vote": 11
+				},
+				{
+					"answer": "I like it.",
+					"vote": 7
+				},
+				{
+					"answer": "It's ok.",
+					"vote": 3
+				},
+				{
+					"answer": "It needs more features!",
+					"vote": 2
+				},
+				{
+					"answer": "I don't care.",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "Which of the following powerups do you wish to see in the Hello Engine the most?",
+			"total": 50,
+			"results": [
+				{
+					"answer": "Propeller Mario",
+					"vote": 20
+				},
+				{
+					"answer": "Cape Mario",
+					"vote": 12
+				},
+				{
+					"answer": "Boo Mario",
+					"vote": 9
+				},
+				{
+					"answer": "Cloud Mario",
+					"vote": 5
+				},
+				{
+					"answer": "Spring Mario",
+					"vote": 4
+				}
+			]
+		},
+		{
+			"question": "Which of the following enemies do you wish to see in the Hello Engine the most?",
+			"total": 32,
+			"results": [
+				{
+					"answer": "Mechakoopa",
+					"vote": 11
+				},
+				{
+					"answer": "Big Bertha",
+					"vote": 7
+				},
+				{
+					"answer": "Super Koopa",
+					"vote": 7
+				},
+				{
+					"answer": "Fishing Lakitu",
+					"vote": 4
+				},
+				{
+					"answer": "Bumpty",
+					"vote": 2
+				},
+				{
+					"answer": "Walking Nipper",
+					"vote": 1
+				},
+				{
+					"answer": "Trouter",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Did you like SMB: Mythical Mushrooms?",
+			"total": 35,
+			"results": [
+				{
+					"answer": "It was awesome!",
+					"vote": 14
+				},
+				{
+					"answer": "It was okay.",
+					"vote": 8
+				},
+				{
+					"answer": "I liked it.",
+					"vote": 7
+				},
+				{
+					"answer": "I didn't like it.",
+					"vote": 3
+				},
+				{
+					"answer": "It's too difficult!",
+					"vote": 3
+				}
+			]
+		},
+		{
+			"question": "How many mythical mushrooms were you able to obtain in SMB: Mythical Mushrooms?",
+			"total": 30,
+			"results": [
+				{
+					"answer": "Two",
+					"vote": 9
+				},
+				{
+					"answer": "Five",
+					"vote": 7
+				},
+				{
+					"answer": "One",
+					"vote": 6
+				},
+				{
+					"answer": "None",
+					"vote": 5
+				},
+				{
+					"answer": "Three",
+					"vote": 3
+				},
+				{
+					"answer": "Four",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Which of the following do you want to see the most in the next version of the Hello Engine?",
+			"total": 33,
+			"results": [
+				{
+					"answer": "Code Optimizations",
+					"vote": 12
+				},
+				{
+					"answer": "Code Comments",
+					"vote": 7
+				},
+				{
+					"answer": "More Playable Characters",
+					"vote": 7
+				},
+				{
+					"answer": "More Enemies",
+					"vote": 5
+				},
+				{
+					"answer": "More Powerups",
+					"vote": 2
+				},
+				{
+					"answer": "More Items",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Should Hello make another game with guns and blood?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "Only if the blood is optional.",
+					"vote": 13
+				},
+				{
+					"answer": "Yes",
+					"vote": 9
+				},
+				{
+					"answer": "Please do it!",
+					"vote": 8
+				},
+				{
+					"answer": "No",
+					"vote": 5
+				},
+				{
+					"answer": "Please don't!",
+					"vote": 5
+				}
+			]
+		},
+		{
+			"question": "Do you like the Hello Fangaming logo?",
+			"total": 30,
+			"results": [
+				{
+					"answer": "It looks awesome!",
+					"vote": 14
+				},
+				{
+					"answer": "I like it.",
+					"vote": 8
+				},
+				{
+					"answer": "It looks okay...",
+					"vote": 4
+				},
+				{
+					"answer": "It looks terrible!",
+					"vote": 3
+				},
+				{
+					"answer": "I don't like it.",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "Do you think the Hello Engine should be given a new name?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "Maybe",
+					"vote": 12
+				},
+				{
+					"answer": "Absolutely!",
+					"vote": 11
+				},
+				{
+					"answer": "Don't Do It!",
+					"vote": 7
+				},
+				{
+					"answer": "No",
+					"vote": 6
+				},
+				{
+					"answer": "Yes",
+					"vote": 4
+				}
+			]
+		},
+		{
+			"question": "Are you excited for Hello's next fangame?",
+			"total": 54,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 35
+				},
+				{
+					"answer": "Maybe",
+					"vote": 11
+				},
+				{
+					"answer": "No",
+					"vote": 8
+				}
+			]
+		},
+		{
+			"question": "How many of Hello's fangames have you played?",
+			"total": 34,
+			"results": [
+				{
+					"answer": "More than 20",
+					"vote": 14
+				},
+				{
+					"answer": "1-4",
+					"vote": 9
+				},
+				{
+					"answer": "5-8",
+					"vote": 4
+				},
+				{
+					"answer": "9-12",
+					"vote": 4
+				},
+				{
+					"answer": "17-20",
+					"vote": 3
+				},
+				{
+					"answer": "13-16",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Should Hello port the Hello Engine to GameMaker Studio?",
+			"total": 35,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 19
+				},
+				{
+					"answer": "Doesn't Matter",
+					"vote": 9
+				},
+				{
+					"answer": "No",
+					"vote": 4
+				},
+				{
+					"answer": "Maybe",
+					"vote": 3
+				}
+			]
+		},
+		{
+			"question": "Is \"Hello Fangaming Mario Engine\" a good replacement name for \"Hello Engine\"?",
+			"total": 32,
+			"results": [
+				{
+					"answer": "Too long...",
+					"vote": 17
+				},
+				{
+					"answer": "It's perfect!",
+					"vote": 9
+				},
+				{
+					"answer": "Don't change it!",
+					"vote": 6
+				},
+				{
+					"answer": "Too similar...",
+					"vote": 0
+				},
+				{
+					"answer": "Both names are bad...",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "Did you like SMB: Ztar Turmoil?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "It was awesome!",
+					"vote": 18
+				},
+				{
+					"answer": "I didn't like it.",
+					"vote": 9
+				},
+				{
+					"answer": "It was okay.",
+					"vote": 8
+				},
+				{
+					"answer": "I liked it.",
+					"vote": 5
+				}
+			]
+		},
+		{
+			"question": "Do you see Mario in the Hello Fangaming logo?",
+			"total": 32,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 27
+				},
+				{
+					"answer": "No",
+					"vote": 5
+				}
+			]
+		},
+		{
+			"question": "Which of my Mario shooters did you like the most?",
+			"total": 21,
+			"results": [
+				{
+					"answer": "Neither...",
+					"vote": 10
+				},
+				{
+					"answer": "Ztar Turmoil",
+					"vote": 5
+				},
+				{
+					"answer": "Bloody Battles",
+					"vote": 5
+				},
+				{
+					"answer": "Crimson Hours",
+					"vote": 1
+				},
+				{
+					"answer": "Dark Days",
+					"vote": 0
+				}
+			]
+		},
+		{
+			"question": "What do you think of Hello Mario Engine v5.2?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "I love it!",
+					"vote": 12
+				},
+				{
+					"answer": "It's okay...",
+					"vote": 8
+				},
+				{
+					"answer": "I don't like it.",
+					"vote": 6
+				},
+				{
+					"answer": "I like it.",
+					"vote": 5
+				}
+			]
+		},
+		{
+			"question": "What do you think of GameMaker Studio?",
+			"total": 30,
+			"results": [
+				{
+					"answer": "It's a huge improvement over GM8.x",
+					"vote": 11
+				},
+				{
+					"answer": "I don't know.",
+					"vote": 8
+				},
+				{
+					"answer": "It's good.",
+					"vote": 5
+				},
+				{
+					"answer": "It's worse than GM8.x",
+					"vote": 5
+				},
+				{
+					"answer": "It's bad.",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "What kind of screen resolution do you prefer?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "Widescreen (16:9)",
+					"vote": 27
+				},
+				{
+					"answer": "Standard (4:3)",
+					"vote": 4
+				}
+			]
+		},
+		{
+			"question": "Do you like Super Mario Eclipse?",
+			"total": 30,
+			"results": [
+				{
+					"answer": "I love it!",
+					"vote": 15
+				},
+				{
+					"answer": "It's okay...",
+					"vote": 8
+				},
+				{
+					"answer": "I like it.",
+					"vote": 4
+				},
+				{
+					"answer": "I don't like it!",
+					"vote": 3
+				}
+			]
+		},
+		{
+			"question": "Do you want code comments in the Hello Mario Engine?",
+			"total": 39,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 34
+				},
+				{
+					"answer": "I don't care.",
+					"vote": 4
+				},
+				{
+					"answer": "No",
+					"vote": 1
+				}
+			]
+		},
+		{
+			"question": "Do you like the Hello Mario Engine v6.0 update?",
+			"total": 33,
+			"results": [
+				{
+					"answer": "I love it!",
+					"vote": 20
+				},
+				{
+					"answer": "I like it.",
+					"vote": 5
+				},
+				{
+					"answer": "It's okay.",
+					"vote": 5
+				},
+				{
+					"answer": "I don't like it...",
+					"vote": 3
+				}
+			]
+		},
+		{
+			"question": "Does my engine have \"good code\" now?",
+			"total": 33,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 22
+				},
+				{
+					"answer": "I don't know",
+					"vote": 7
+				},
+				{
+					"answer": "No",
+					"vote": 4
+				}
+			]
+		},
+		{
+			"question": "Do you like Super Mario Dynamo?",
+			"total": 29,
+			"results": [
+				{
+					"answer": "I love it!",
+					"vote": 16
+				},
+				{
+					"answer": "I like it.",
+					"vote": 5
+				},
+				{
+					"answer": "It is okay...",
+					"vote": 4
+				},
+				{
+					"answer": "I don't like it.",
+					"vote": 4
+				}
+			]
+		},
+		{
+			"question": "Do you like the Hello Mario Engine v6.1 update?",
+			"total": 24,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 21
+				},
+				{
+					"answer": "No",
+					"vote": 3
+				}
+			]
+		}
+	]
+}
