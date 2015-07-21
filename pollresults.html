@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/piechart.min.js"></script>
+		<script type="text/javascript">
+		//Global
+		var pollresults = undefined;
+		
+		//Pie chart update
+		var update = function(poll) {
+			var thepoll = pollresults[poll];
+			$("#votes").text(thepoll.total);
+			
+			//Pie chart
+			var chart = PieCharts.makeChart("piechart", {
+				"type": "pie",
+				"theme": "light",
+				"dataProvider": thepoll.results,
+				"valueField": "vote",
+				"titleField": "answer",
+				"balloon":{
+					"fixedPosition":true
+				},
+				"export": {
+					"enabled": true
+				}
+			});
+		}
+		
+		//Start
+		$( document ).ready(function() {
+		
+			//JSON LOAD
+			$.getJSON("pollresults.json", function(result){
+				pollresults = result.pollresults;
+				$.each(pollresults, function(index, value){
+					$('#pollselector')
+						.append($("<option></option>")
+						.attr("value",index)
+						.text(value.question));
+					$("#test").append(index+value.question);
+				});
+				setTimeout(function(){ update(0); }, 500);
+			});
+			
+			//Select Update
+			$("#pollselector").change(function(){
+				update($(this).val());
+			});
+	
+		});
+		</script>
+	</head>
+	<body style="text-align: center;">
+		<select id="pollselector"></select>
+		<div id="piechart" style="height: 500px;"></div>
+		<p>Total Votes: <span id="votes"></span></p>
+	</body>
+</html>
