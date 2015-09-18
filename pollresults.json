@@ -1477,6 +1477,20 @@
 					"vote": 3
 				}
 			]
+		},
+		{
+			"question": "Do you like the new Hello Fangaming Website?",
+			"total": 33,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 31
+				},
+				{
+					"answer": "No",
+					"vote": 2
+				}
+			]
 		}
 	]
 }
