@@ -1513,6 +1513,24 @@
 					"vote": 3
 				}
 			]
+		},
+		{
+			"question": "What did you think when you heard that Hello Fangaming is no longer making \"normal Mario fangames\"?",
+			"total": 29,
+			"results": [
+				{
+					"answer": "Yay!",
+					"vote": 14
+				},
+				{
+					"answer": "Noooo!",
+					"vote": 8
+				},
+				{
+					"answer": "Don't care...",
+					"vote": 7
+				}
+			]
 		}
 	]
 }
