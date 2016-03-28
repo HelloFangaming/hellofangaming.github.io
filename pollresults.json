@@ -1531,6 +1531,36 @@
 					"vote": 7
 				}
 			]
+		},
+		{
+			"question": "Which of the following do you want to see most in a new Mario fangame by Hello Fangaming? ",
+			"total": 30,
+			"results": [
+				{
+					"answer": "Shooter",
+					"vote": 3
+				},
+				{
+					"answer": "RPG",
+					"vote": 4
+				},
+				{
+					"answer": "Horror",
+					"vote": 0
+				},
+				{
+					"answer": "Mystery",
+					"vote": 1
+				},
+				{
+					"answer": "3D",
+					"vote": 8
+				},
+				{
+					"answer": "Level Editor",
+					"vote": 14
+				}
+			]
 		}
 	]
 }
