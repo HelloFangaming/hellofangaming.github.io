@@ -1533,7 +1533,7 @@
 			]
 		},
 		{
-			"question": "Which of the following do you want to see most in a new Mario fangame by Hello Fangaming? ",
+			"question": "Which of the following do you want to see most in a new Mario fangame by Hello Fangaming?",
 			"total": 30,
 			"results": [
 				{
@@ -1559,6 +1559,44 @@
 				{
 					"answer": "Level Editor",
 					"vote": 14
+				}
+			]
+		},
+		{
+			"question": "Which of the following characters do you most want to see as a main character of a Mario fangame?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "Luigi",
+					"vote": 7
+				},
+				{
+					"answer": "Wario",
+					"vote": 8
+				},
+				{
+					"answer": "Peach",
+					"vote": 0
+				},
+				{
+					"answer": "Rosalina",
+					"vote": 3
+				},
+				{
+					"answer": "Toad",
+					"vote": 3
+				},
+				{
+					"answer": "Toadette",
+					"vote": 2
+				},
+				{
+					"answer": "Toadsworth",
+					"vote": 2
+				},
+				{
+					"answer": "Bowser",
+					"vote": 6
 				}
 			]
 		}
