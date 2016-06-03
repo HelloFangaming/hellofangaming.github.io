@@ -408,6 +408,7 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-bullhorn"></i> Latest News</h4>
 					</div>
 					<div class="panel-body">
+						<p><strong>June 3, 2016:</strong> Mario Editor is now available for download!</p>
 						<p><strong>October 1, 2015:</strong> Hello Mario Engine 6.1.3 update released!</p>
 						<p><strong>August 24, 2015:</strong> Hello Fangaming Collection is now available for download!</p>
 						<p><strong>July 10, 2015:</strong> Hello Fangaming Collection announced! To be released on NCFC 2015!</p>
@@ -434,6 +435,11 @@ header.carousel .fill {
 			<div class="col-lg-12">
 				<h2 class="page-header">Games</h2>
 			</div>
+			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+				<a class="hovertext" href="#" name="Mario Editor" data-toggle="modal" data-target="#meModal">
+					<img class="img-responsive gallery-image" src="img/me1.png" alt="">
+				</a>
+			</div></div>
 			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 				<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
 					<img class="img-responsive gallery-image" src="img/hfc.png" alt="">
@@ -586,6 +592,33 @@ header.carousel .fill {
 						<iframe id="pollframe" width="100%" height="600px" frameborder="0"></iframe>
 				</div>
 				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Editor Modal -->
+	<div class="modal fade" id="meModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Mario Editor</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="http://www.youtube.com/embed/uO-txijaDtc?modestbranding=1&controls=2"></iframe>
+					</div>
+					<p>With Mario Editor, it's easy to play, create, and share your very own custom Mario levels! Utilize a massive selection of powerups, enemies, items, and other goodies in your creations.</p>
+					<p>Want to share your level with others? Want to try out levels others have made? Check out the Mario Editor Showcase!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://gamejolt.com/games/mario-editor/153901" class="btn btn-success" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'marioeditor');"><i class="glyphicon glyphicon-download-alt"></i> Download on Game Jolt</a>
+					<a href="http://marioeditor.us.to/" class="btn btn-warning" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'marioeditorshowcase');"><i class="glyphicon glyphicon-search"></i> Showcase</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
