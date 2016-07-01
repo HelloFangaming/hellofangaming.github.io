@@ -1599,6 +1599,32 @@
 					"vote": 6
 				}
 			]
+		},
+		{
+			"question": "Which of Hello Fangaming's last five games did you like the most?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "Hello Fangaming Collection",
+					"vote": 6
+				},
+				{
+					"answer": "Super Mario Dynamo",
+					"vote": 8
+				},
+				{
+					"answer": "Super Mario Eclipse",
+					"vote": 5
+				},
+				{
+					"answer": "Yoshi Tanks",
+					"vote": 8
+				},
+				{
+					"answer": "SMB: Ztar Turmoil",
+					"vote": 4
+				}
+			]
 		}
 	]
 }
