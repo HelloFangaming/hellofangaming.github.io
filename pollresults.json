@@ -1625,6 +1625,28 @@
 					"vote": 4
 				}
 			]
+		},
+		{
+			"question": "Do you like Mario Editor?",
+			"total": 31,
+			"results": [
+				{
+					"answer": "I love it!",
+					"vote": 23
+				},
+				{
+					"answer": "I like it.",
+					"vote": 4
+				},
+				{
+					"answer": "It is okay.",
+					"vote": 2
+				},
+				{
+					"answer": "I don't like it.",
+					"vote": 2
+				}
+			]
 		}
 	]
 }
