@@ -6,7 +6,6 @@ html {
 body {
 	margin-bottom: 60px;
 	font-family: Verdana, Geneva, sans-serif;
-	background-image: url('/img/watermark.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
