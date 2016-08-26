@@ -41,16 +41,263 @@
 			<li class="active">Hello Mario Engine Tutorials</li>
 		</ol>
 		
-		<div class="alert alert-danger" role="alert">
-			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-			This article is incomplete, and will be filled in later.
-		</div>
-		
 		<!-- Item Heading -->
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="page-header">Hello Mario Engine Tutorials</h1>
-				<p></p>
+				<ul>
+					<li><a class="smoothscroll" href="#start">Getting Started</a></li>
+					<li><a class="smoothscroll" href="#faq">Common Questions</a></li>
+					<li><a class="smoothscroll" href="#creationcode">Creation Codes</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.row -->
+		
+		<!-- Item Heading -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 id="start" class="page-header">Getting Started</h1>
+				<p>If you haven't already, visit the <a href="http://hellofangaming.github.io/HelloMarioEngine/">Hello Mario Engine Website</a>, download the latest source code, and follow the instructions on the <i>Getting Started</i> section to import the engine into GameMaker: Studio. If you need help with GameMaker: Studio itself, visit the <a href="http://docs.yoyogames.com/">GameMaker: Studio Documentation</a> to learn about how the program works, and look at all of the built in functionality it contains. If you need additional help, the <a href="https://forum.yoyogames.com/">GameMaker Community</a> is a great place to ask your GameMaker questions, and your questions will be answered there faster than on most other places.</p>
+			</div>
+		</div>
+		<!-- /.row -->
+		
+		<!-- Item Heading -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 id="faq" class="page-header">Common Questions</h1>
+				<ul>
+					<li>
+						<strong>Am I allowed to make games with this engine?</strong>
+						<p>Yes, you can use this engine to release open and closed source games, and you can even release customized versions for other people to use.</p>
+					</li>
+					<li>
+						<strong>What objects can be scaled in the room editor?</strong>
+						<p>Only the collision objects can be scaled, excluding the slopes. Scaling the slopes, or any other object may result in unexpected behavior.</p>
+					</li>
+					<li>
+						<strong>What do I do if I want to change the size of Mario's sprites?</strong>
+						<p>Change the x origin to half the width of the sprite, and change the y origin to the height of the sprite minus 32.</p>
+					</li>
+					<li>
+						<strong>Do you allow people to make "clones" using this engine?</strong>
+						<p>This engine was designed to be easy to expand upon in order to encourage you to add new things to it. Of course, if you want to make a clone, that is also allowed. What you do with this engine is up to you.</p>
+					</li>
+					<li>
+						<strong>I found a bug! That means that this engine is buggy!</strong>
+						<p>Please report it on the Hello Mario Engine's <a href="https://github.com/HelloFangaming/HelloMarioEngine/issues">issue tracker</a>.</p>
+					</li>
+					<li>
+						<strong>Can I use the Steam version of GM Studio?</strong>
+						<p>The Steam version is the same as the normal version, so you can.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.row -->
+		
+		<!-- Item Heading -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 id="creationcode" class="page-header">Creation Codes</h1>
+				<p>Some objects in this engine require creation code when you place them in rooms. To do this, simply right click on the object, and choose creation code. What is needed can be found commented in the create events of these objects. Below, you will see a complete list of objects in this engine that use creation code.</p>
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<tr>
+							<th>Object</th>
+							<th>Reason</th>
+						</tr>
+						<tr>
+							<td>obj_levelmanager</td>
+							<td>To choose the music and time limit.</td>
+						</tr>
+						<tr>
+							<td>obj_stormmaker</td>
+							<td>To change the color of the rain.</td>
+						</tr>
+						<tr>
+							<td>obj_bganimator</td>
+							<td>To select what order to animate backgrounds.</td>
+						</tr>
+						<tr>
+							<td>obj_autoscroll</td>
+							<td>Whether you want it to follow Mario's y value.</td>
+						</tr>
+						<tr>
+							<td>obj_block</td>
+							<td>To choose what comes out.</td>
+						</tr>
+						<tr>
+							<td>obj_block_hidden</td>
+							<td>To choose what comes out.</td>
+						</tr>
+						<tr>
+							<td>obj_block_triple</td>
+							<td>To choose what comes out.</td>
+						</tr>
+						<tr>
+							<td>obj_block_triple_hidden</td>
+							<td>To choose what comes out.</td>
+						</tr>
+						<tr>
+							<td>obj_block_spiked</td>
+							<td>To choose what comes out.</td>
+						</tr>
+						<tr>
+							<td>obj_block_winged</td>
+							<td>To choose what comes out.</td>
+						</tr>
+						<tr>
+							<td>obj_noteblock</td>
+							<td>To choose a powerup to come out when you bounce on it.</td>
+						</tr>
+						<tr>
+							<td>obj_noteblock_warp</td>
+							<td>To select a destination.</td>
+						</tr>
+						<tr>
+							<td>obj_warpnoteblock_hidden</td>
+							<td>To select a destination.</td>
+						</tr>
+						<tr>
+							<td>obj_messageblock</td>
+							<td>To choose the message to display.</td>
+						</tr>
+						<tr>
+							<td>obj_lakitu</td>
+							<td>To set the boundaries for where he appears.</td>
+						</tr>
+						<tr>
+							<td>obj_lakitu_ball</td>
+							<td>To set the boundaries for where he appears.</td>
+						</tr>
+						<tr>
+							<td>obj_angrysun</td>
+							<td>To set the boundaries for where he attacks.</td>
+						</tr>
+						<tr>
+							<td>obj_boocircle</td>
+							<td>To set its rotational direction.</td>
+						</tr>
+						<tr>
+							<td>obj_netkoopa</td>
+							<td>To set its starting direction.</td>
+						</tr>
+						<tr>
+							<td>obj_netkoopa_red</td>
+							<td>To set its starting direction.</td>
+						</tr>
+						<tr>
+							<td>obj_netspark</td>
+							<td>To set its starting direction.</td>
+						</tr>
+						<tr>
+							<td>obj_rotodisc</td>
+							<td>To set its rotational direction.</td>
+						</tr>
+						<tr>
+							<td>obj_firebar</td>
+							<td>To set its rotational direction.</td>
+						</tr>
+						<tr>
+							<td>obj_firebar_large</td>
+							<td>To set its rotational direction.</td>
+						</tr>
+						<tr>
+							<td>obj_ballnchain</td>
+							<td>To set its rotational direction.</td>
+						</tr>
+						<tr>
+							<td>obj_magikoopa</td>
+							<td>To set the boundary for where he appears.</td>
+						</tr>
+						<tr>
+							<td>obj_diacannon</td>
+							<td>To set its direction.</td>
+						</tr>
+						<tr>
+							<td>obj_bombcannon</td>
+							<td>To set its direction.</td>
+						</tr>
+						<tr>
+							<td>obj_sidecannon</td>
+							<td>To set its direction.</td>
+						</tr>
+						<tr>
+							<td>obj_classicbowser</td>
+							<td>To set where Bowser's flames start generating.</td>
+						</tr>
+						<tr>
+							<td>obj_pipeenemygenerator</td>
+							<td>To choose its direction and enemy.</td>
+						</tr>
+						<tr>
+							<td>obj_bulletgenerator</td>
+							<td>To set the boundaries for where it generates.</td>
+						</tr>
+						<tr>
+							<td>obj_stormgenerator</td>
+							<td>To set the boundaries for where it generates.</td>
+						</tr>
+						<tr>
+							<td>obj_cheepgenerator</td>
+							<td>To set the boundaries for where it generates.</td>
+						</tr>
+						<tr>
+							<td>obj_levelpanel</td>
+							<td>To select a name, destination, and number.</td>
+						</tr>
+						<tr>
+							<td>obj_levelcastle</td>
+							<td>To select a name and destination.</td>
+						</tr>
+						<tr>
+							<td>obj_mappipe</td>
+							<td>To select a destination.</td>
+						</tr>
+						<tr>
+							<td>obj_mushhouse</td>
+							<td>To select the powerups in the boxes.</td>
+						</tr>
+						<tr>
+							<td>obj_mapbro</td>
+							<td>To select a prize powerup.</td>
+						</tr>
+						<tr>
+							<td>obj_platformtimed</td>
+							<td>To set the time limit.</td>
+						</tr>
+						<tr>
+							<td>obj_movingrope</td>
+							<td>To choose how long the rope is.</td>
+						</tr>
+						<tr>
+							<td>obj_movingrope_touch</td>
+							<td>To choose how long the rope is.</td>
+						</tr>
+						<tr>
+							<td>obj_bubble_item</td>
+							<td>To choose the item in it.</td>
+						</tr>
+						<tr>
+							<td>obj_veggie_sprout</td>
+							<td>To choose the item in it.</td>
+						</tr>
+						<tr>
+							<td>obj_postchange</td>
+							<td>To select Mario's new position.</td>
+						</tr>
+						<tr>
+							<td>obj_warproom</td>
+							<td>To select Mario's new room and position.</td>
+						</tr>
+						<tr>
+							<td>obj_speedmarker</td>
+							<td>To set a speed for the marker.</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		<!-- /.row -->
