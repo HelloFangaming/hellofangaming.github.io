@@ -1669,6 +1669,32 @@
 					"vote": 1
 				}
 			]
+		},
+		{
+			"question": "What kind of game would you prefer next from Hello Fangaming?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "Normal",
+					"vote": 7
+				},
+				{
+					"answer": "Cool and Edgy",
+					"vote": 2
+				},
+				{
+					"answer": "Mysterious",
+					"vote": 12
+				},
+				{
+					"answer": "Cute",
+					"vote": 18
+				},
+				{
+					"answer": "Scary",
+					"vote": 1
+				}
+			]
 		}
 	]
 }
