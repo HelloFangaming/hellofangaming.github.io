@@ -1695,6 +1695,32 @@
 					"vote": 1
 				}
 			]
+		},
+		{
+			"question": "What do you think of GameMaker: Studio 2?",
+			"total": 32,
+			"results": [
+				{
+					"answer": "It's a huge improvement!",
+					"vote": 9
+				},
+				{
+					"answer": "It's good.",
+					"vote": 9
+				},
+				{
+					"answer": "It's bad.",
+					"vote": 2
+				},
+				{
+					"answer": "It's worse than Studio 1.4.",
+					"vote": 3
+				},
+				{
+					"answer": "I don't know.",
+					"vote": 9
+				}
+			]
 		}
 	]
 }
