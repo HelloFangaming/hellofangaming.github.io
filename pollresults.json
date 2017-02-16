@@ -1721,6 +1721,28 @@
 					"vote": 9
 				}
 			]
+		},
+		{
+			"question": "What if Hello Fangaming stopped making Mario fangames?",
+			"total": 30,
+			"results": [
+				{
+					"answer": "Nooo!",
+					"vote": 24
+				},
+				{
+					"answer": "Yay! (If you make other fangames.)",
+					"vote": 1
+				},
+				{
+					"answer": "Yay! (If you make indie games.)",
+					"vote": 4
+				},
+				{
+					"answer": "Yay! (No more games!)",
+					"vote": 1
+				}
+			]
 		}
 	]
 }
