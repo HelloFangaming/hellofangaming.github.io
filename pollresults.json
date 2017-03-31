@@ -1743,6 +1743,24 @@
 					"vote": 1
 				}
 			]
+		},
+		{
+			"question": "Should Hello Fangaming stop using GameMaker?",
+			"total": 42,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 10
+				},
+				{
+					"answer": "No",
+					"vote": 26
+				},
+				{
+					"answer": "I don't care",
+					"vote": 6
+				}
+			]
 		}
 	]
 }
