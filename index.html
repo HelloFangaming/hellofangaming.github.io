@@ -79,6 +79,21 @@ header.carousel .fill {
 	image-rendering: pixelated;
 }
 
+/* Panel Styles */
+
+.panel {
+	background:rgba(255,255,255,0);
+}
+
+.panel-default > .panel-heading {
+	background:rgba(136,0,0,0.75);
+	color: #ffffff;
+}
+
+.panel-default > .panel-body {
+	background:rgba(255,255,255,0.75);
+}
+
 /* Header Styles */
 
 .navbar-default {
@@ -175,7 +190,7 @@ header.carousel .fill {
 /* Random Stuff */
 
 .alphabox {
-	background:rgba(169,68,66,0.4);
+	background:rgba(0,0,0,0.2);
 }
 
 .invisiwidth {
@@ -184,14 +199,6 @@ header.carousel .fill {
 
 .img-fill {
 	width: 100%;
-}
-
-.panel {
-	opacity: 0.8;
-}
-
-.panel:hover {
-	opacity: 1.0;
 }
 
 .gallery-item {
@@ -222,17 +229,9 @@ header.carousel .fill {
 	top:30px;
 	padding:0.5em 20px;
 	font-weight: bold;
-	background:rgba(169,68,66,0.4);
+	background:rgba(136,0,0,0.5);
 	text-decoration:none;
 	color:#fff;
-	opacity:0;
-	-webkit-transition:0.5s;
-	-moz-transition:0.5s;
-	-o-transition:0.5s;
-	-ms-transition:0.5s;
-}
-.hovertext:hover:after,.hovertext:focus:after {
-	opacity: 1.0;
 }
 
 /* Responsive Styles */
@@ -388,22 +387,19 @@ header.carousel .fill {
 
 	<!-- Page Content -->
 	<div class="container">
-
+		<hr>
 		<!-- Info Section -->
 		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="page-header">Hello Fangaming</h2>
-			</div>
 			<div class="col-md-9">
-				<div class="panel panel-danger">
+				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4><i class="glyphicon glyphicon-info-sign"></i> Welcome</h4>
 					</div>
 					<div class="panel-body">
-						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, open source projects, and more! Want to play some fangames? Check out the selection of games below! Interested in making your own fangames? Check out the open source section! Want to leave feedback? Vote in the poll to the right, or post a comment!</p>
+						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, open source projects, and more! Want to play some fangames? Check out the selection of games! Interested in making your own fangames? Check out the open source section! Want to leave feedback? Vote in the poll, or post a comment!</p>
 					</div>
 				</div>
-				<div class="panel panel-danger">
+				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4><i class="glyphicon glyphicon-bullhorn"></i> Latest News</h4>
 					</div>
@@ -419,12 +415,12 @@ header.carousel .fill {
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="panel panel-danger">
+				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4><i class="glyphicon glyphicon-stats"></i> Poll</h4>
 					</div>
 					<div class="panel-body">
-						<iframe src="poll.html" width="100%" height="360px" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true"></iframe>
+						<iframe src="poll.html" width="100%" height="360px" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true""></iframe>
 						<p><a href="#" data-toggle="modal" data-target="#pollModal" onclick="document.getElementById('pollframe').src = 'pollresults.html';">Previous Polls</a></p>
 					</div>
 				</div>
@@ -434,81 +430,101 @@ header.carousel .fill {
 		<hr id="games">
 		<!-- Games Section -->
 		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="page-header">Games</h2>
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="glyphicon glyphicon-cd"></i> Games</h4>
+					</div>
+					<div class="panel-body">
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Mario Editor" data-toggle="modal" data-target="#meModal">
+								<img class="img-responsive gallery-image" src="img/me1.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
+								<img class="img-responsive gallery-image" src="img/hfc.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#smdModal">
+								<img class="img-responsive gallery-image" src="img/smd.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#smeModal">
+								<img class="img-responsive gallery-image" src="img/sme.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#ytModal">
+								<img class="img-responsive gallery-image" src="img/ytanks.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#smbztModal">
+								<img class="img-responsive gallery-image" src="img/smbzt.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#smbmmModal">
+								<img class="img-responsive gallery-image" src="img/smbmm.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#smbrrModal">
+								<img class="img-responsive gallery-image" src="img/smbrr.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hwmg09Modal">
+								<img class="img-responsive gallery-image" src="img/hwmg09.png" alt="">
+							</a>
+						</div></div>
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Older Games" data-toggle="modal" data-target="#oldgameModal">
+								<img class="img-responsive gallery-image" src="img/oldgames.png" alt="">
+							</a>
+						</div></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Mario Editor" data-toggle="modal" data-target="#meModal">
-					<img class="img-responsive gallery-image" src="img/me1.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
-					<img class="img-responsive gallery-image" src="img/hfc.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#smdModal">
-					<img class="img-responsive gallery-image" src="img/smd.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#smeModal">
-					<img class="img-responsive gallery-image" src="img/sme.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#ytModal">
-					<img class="img-responsive gallery-image" src="img/ytanks.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#smbztModal">
-					<img class="img-responsive gallery-image" src="img/smbzt.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#smbmmModal">
-					<img class="img-responsive gallery-image" src="img/smbmm.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#smbrrModal">
-					<img class="img-responsive gallery-image" src="img/smbrr.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hwmg09Modal">
-					<img class="img-responsive gallery-image" src="img/hwmg09.png" alt="">
-				</a>
-			</div></div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="#" name="Older Games" data-toggle="modal" data-target="#oldgameModal">
-					<img class="img-responsive gallery-image" src="img/oldgames.png" alt="">
-				</a>
-			</div></div>
 		</div>
 		<!-- /.row -->
 		<hr id="opensource">
 		<!-- Open Source Section -->
 		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="page-header">Open Source</h2>
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="glyphicon glyphicon-education"></i> Open Source</h4>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+								<a class="hovertext" href="https://hellofangaming.github.io/HelloMarioEngine/" name="Hello Mario Engine" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellomarioengine');">
+									<img class="img-responsive gallery-image" src="img/hme.png" alt="">
+								</a>
+							</div></div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-				<a class="hovertext" href="https://hellofangaming.github.io/HelloMarioEngine/" name="Hello Mario Engine" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellomarioengine');">
-					<img class="img-responsive gallery-image" src="img/hme.png" alt="">
-				</a>
-			</div></div>
 		</div>
 		<!-- /.row -->
 		<hr id="comments">
 		<!-- Comments Section -->
 		<div class="row">
-			<div class="col-lg-12">
-				<h2 class="page-header">Comments</h2>
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="glyphicon glyphicon-comment"></i> Comments</h4>
+					</div>
+					<div class="panel-body">
+						<div id="disqus_thread" class="col-lg-12"></div>
+					</div>
+				</div>
 			</div>
-			<div id="disqus_thread" class="col-lg-12"></div>
 		</div>
 		<!-- /.row -->
 		<hr>
@@ -541,7 +557,7 @@ header.carousel .fill {
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
 				$('html,body').animate({
-				scrollTop: target.offset().top
+				scrollTop: target.offset().top-50
 				}, 500);
 				return false;
 			}
