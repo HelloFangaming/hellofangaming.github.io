@@ -53,6 +53,10 @@ a:hover, a:visited, a:link, a:active {
 	margin-top: 16px;
 }
 
+.wikibox-in > p{
+	font-size: 130%;
+}
+
 /* Header Styles */
 
 .navbar-default {
