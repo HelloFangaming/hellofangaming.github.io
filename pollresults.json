@@ -1787,6 +1787,24 @@
 					"vote": 5
 				}
 			]
+		},
+		{
+			"question": "Do you think HQ2X/HQ4X filtering looks good?",
+			"total": 40,
+			"results": [
+				{
+					"answer": "Yes",
+					"vote": 26
+				},
+				{
+					"answer": "No",
+					"vote": 6
+				},
+				{
+					"answer": "I don't care",
+					"vote": 8
+				}
+			]
 		}
 	]
 }
