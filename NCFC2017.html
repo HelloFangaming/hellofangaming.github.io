@@ -35,6 +35,10 @@ img {
 	image-rendering: pixelated;
 }
 
+video {
+	image-rendering: pixelated;
+}
+
 a, a:active, a:focus {
 	outline: none;
 }
@@ -58,6 +62,10 @@ a:hover, a:visited, a:link, a:active {
 
 .gallery-item:hover {
 	opacity: 1.0;
+}
+
+.modal-dialog {
+    min-width: 75%;
 }
 
 /* Footer Styles */
@@ -127,6 +135,9 @@ footer {
 				<p>A decade's worth of fangames, all in one download! The Hello Fangaming Time Capsule + Launcher includes a grand total of 40 fangames, all of which can be accessed from one convenient launcher.</p>
 				<h3>Super Mario Dynamo v1.1 Update</h3>
 				<p>Super Mario Dynamo has received an update! This update adds Daredevil Mode, a game mode where every hit results in instant death, minor level design tweaks, and backported bug fixes. The updated game is included in this time capsule.</p>
+				<h3>Sneak Peek</h3>
+				<p>Are you interested in Hello Fangaming's next game? Click on the button below for a sneak peek! Unfortunately, this game will not be available for NCFC 2017.</br><strong>Warning: Contains blood.</strong></p>
+				<p><a class="btn btn-success" href="#" data-toggle="modal" data-target="#sneakPeekModal"><i class="glyphicon glyphicon-eye-open"></i> Sneak Peek</a></p>
 			</div>
 		
 		</div>
@@ -256,6 +267,31 @@ footer {
 				</div>
 				<div class="modal-body">
 					<img class="img-responsive fullwidth" src="img/launcher4.png" alt="">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Sneak Peek Modal -->
+	<div class="modal fade" id="sneakPeekModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Sneak Peek!</h4>
+				</div>
+				<div class="modal-body">
+					<div align="center" class="embed-responsive embed-responsive-16by9">
+						<video autoplay loop class="embed-responsive-item">
+							<source src="files/NCFC2017Preview.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
