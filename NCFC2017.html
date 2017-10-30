@@ -36,7 +36,14 @@ img {
 }
 
 video {
-	image-rendering: pixelated;
+	image-rendering: optimizeSpeed;             /* Legal fallback */
+	image-rendering: -moz-crisp-edges;          /* Firefox        */
+	image-rendering: -o-crisp-edges;            /* Opera          */
+	image-rendering: -webkit-optimize-contrast; /* Safari         */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed  */
+	image-rendering: crisp-edges;               /* CSS4 Proposed  */
+	image-rendering: pixelated;                 /* CSS4 Proposed  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
 }
 
 a, a:active, a:focus {
@@ -136,7 +143,7 @@ footer {
 				<h3>Super Mario Dynamo v1.1 Update</h3>
 				<p>Super Mario Dynamo has received an update! This update adds Daredevil Mode, a game mode where every hit results in instant death, minor level design tweaks, and backported bug fixes. The updated game is included in this time capsule.</p>
 				<h3>Sneak Peek</h3>
-				<p>Are you interested in Hello Fangaming's next game? Click on the button below for a sneak peek! Unfortunately, this game will not be available for NCFC 2017.</br><strong>Warning: Contains blood.</strong></p>
+				<p>Are you interested in Hello Fangaming's next game? Click on the button below for a sneak peek! Unfortunately, this game will not be available at NCFC 2017.</br><strong>Warning: Contains blood.</strong></p>
 				<p><a class="btn btn-success" href="#" data-toggle="modal" data-target="#sneakPeekModal"><i class="glyphicon glyphicon-eye-open"></i> Sneak Peek</a></p>
 			</div>
 		
