@@ -246,6 +246,7 @@ header.carousel .fill {
 }
 
 .gallery-image {
+	width: 100%;
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: auto;
@@ -258,6 +259,19 @@ header.carousel .fill {
 	white-space: nowrap;
 	top:30px;
 	padding:0.5em 20px;
+	font-weight: bold;
+	background:rgba(136,0,0,0.5);
+	text-decoration:none;
+	color:#fff;
+}
+
+.hovertext-random:after {
+	font-size: 70%;
+	content:attr(name);
+	position:absolute;
+	white-space: nowrap;
+	top:30px;
+	padding:0.5em 10px;
 	font-weight: bold;
 	background:rgba(136,0,0,0.5);
 	text-decoration:none;
@@ -433,6 +447,18 @@ header.carousel .fill {
 				</div>
 			</div>
 			<div class="col-lg-3">
+				<div id="randBox" class="panel panel-default hidden-md hidden-sm hidden-xs" style="display:none">
+					<div class="panel-heading">
+						<h4><i class="glyphicon glyphicon-time"></i> Time Capsule</h4>
+					</div>
+					<div class="panel-body">
+						<div class="col-xs-12 gallery-item">
+							<a id="randLink" class="hovertext-random" href="#" data-toggle="modal" data-target="#randomModal">
+								<img id="randThumb" class="img-responsive gallery-image" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4><i class="glyphicon glyphicon-cloud"></i> Social Media</h4>
@@ -481,26 +507,6 @@ header.carousel .fill {
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#ytModal">
 								<img class="img-responsive gallery-image" src="img/ytanks.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Super Mario Bros: Ztar Turmoil" data-toggle="modal" data-target="#smbztModal">
-								<img class="img-responsive gallery-image" src="img/smbzt.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Super Mario Bros: Mythical Mushrooms" data-toggle="modal" data-target="#smbmmModal">
-								<img class="img-responsive gallery-image" src="img/smbmm.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Super Mario Bros: Restless Reality" data-toggle="modal" data-target="#smbrrModal">
-								<img class="img-responsive gallery-image" src="img/smbrr.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Hello Winter Mario Games 2009" data-toggle="modal" data-target="#hwmg09Modal">
-								<img class="img-responsive gallery-image" src="img/hwmg09.png" alt="">
 							</a>
 						</div></div>
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
@@ -776,85 +782,7 @@ header.carousel .fill {
 		</div>
 	</div>
 	
-	<!-- Mythical Mushrooms Modal -->
-	<div class="modal fade" id="smbmmModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Mario Bros: Mythical Mushrooms</h4>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/P4MVYpVPX-U?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>There is a legend that tells of five mythical mushrooms of untold power. Mario sets off on a journey to collect these mushrooms in this challenging metroidvania platformer.</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/super-mario-bros-mythical-mushrooms/downloads/super-mario-bros-mythical-mushrooms" class="btn btn-success" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'mythicalmushrooms');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- Restless Reality Modal -->
-	<div class="modal fade" id="smbrrModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Mario Bros: Restless Reality</h4>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/6_Itfg1XuRY?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>Many years have passed since the Mario Bros last defeated Bowser and stopped his plans for world domination. The Mushroom Kingdom enjoyed years of peace. Until one day... Bowser is up to no good again! He is invading the once peaceful kingdom, and setting up forts! What could he be planning!? Mario must travel through many different locations to find out what Bowser is up to and stop his evil plans!</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/super-mario-bros-restless-reality/downloads/super-mario-bros-restless-reality" class="btn btn-success" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'restlessreality');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- HWMG2009 Modal -->
-	<div class="modal fade" id="hwmg09Modal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Hello Winter Mario Games 2009</h4>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/i7MaThbDuKA?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>This winter game includes winter remakes of Super Luigi Paradise and Mario's Run. In addition to this, extra new levels have been added.</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/hello-winter-mario-games-2009/downloads/hello-winter-mario-games-2009" class="btn btn-success" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellowintermariogames');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- Older Games Modal -->
+	<!-- Time Capsule Modal -->
 	<div class="modal fade" id="timecapsuleModal" role="dialog">
 		<div class="modal-dialog modal-lg">
 		
@@ -879,6 +807,34 @@ header.carousel .fill {
 			
 		</div>
 	</div>
+	
+	<!-- Random Game Modal -->
+	<div class="modal fade" id="randomModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 id="randName" class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+					<img id="randImg" class="img-responsive img-fill">
+					<br>
+					<p id="randDesc"></p>
+					<p>This game, and more, can be found in the Hello Fangaming Time Capsule!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://www.indiedb.com/games/hello-fangaming-time-capsule-launcher/downloads/hello-fangaming-time-capsule" class="btn btn-success" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'timecapsule');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- Random Game Script -->
+	<script src="js/randomgame.js"></script>
 
 </body>
 
