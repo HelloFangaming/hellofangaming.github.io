@@ -422,11 +422,11 @@ header.carousel .fill {
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
-				<div class="fill" style="background-image:url('img/carousel/hfcCarousel.png');"></div>
+				<div class="fill" style="background-image:url('img/carousel/tspCarousel.png');"></div>
 				<div class="carousel-caption alphabox">
-					<h2>Hello Fangaming Collection</h2>
-					<h4>Celebrating 10 years of fangaming!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#hfcModal"><i class="glyphicon glyphicon-play"></i> More Info</a>
+					<h2>The Shroom Project</h2>
+					<h4>Guns, blood, shrooms, and zombies!</h4>
+					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#tspModal"><i class="glyphicon glyphicon-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
@@ -436,6 +436,15 @@ header.carousel .fill {
 					<h2>Hello Mario Engine</h2>
 					<h4>Create your own Mario games using this engine for GameMaker: Studio!</h4>
 					<a href="https://hellofangaming.github.io/HelloMarioEngine/" class="btn btn-hellofangaming" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellomarioengine');"><i class="glyphicon glyphicon-play"></i> More Info</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="fill" style="background-image:url('img/carousel/hfcCarousel.png');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Hello Fangaming Collection</h2>
+					<h4>Celebrating 10 years of fangaming!</h4>
+					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#hfcModal"><i class="glyphicon glyphicon-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
@@ -454,15 +463,6 @@ header.carousel .fill {
 					<h2>Super Mario Eclipse</h2>
 					<h4>Colorful Mario platforming with challenging puzzles!</h4>
 					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#smeModal"><i class="glyphicon glyphicon-play"></i> More Info</a>
-					<p></p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="fill" style="background-image:url('img/carousel/ztCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>Super Mario Bros: Ztar Turmoil</h2>
-					<h4>Mario with guns! And blood!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#smbztModal"><i class="glyphicon glyphicon-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
@@ -496,6 +496,7 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-bullhorn"></i> Latest News</h4>
 					</div>
 					<div class="panel-body">
+						<p><strong>December 22, 2017:</strong> The Shroom Project is now available for download!</p>
 						<p><strong>December 15, 2017:</strong> Hello Mario Engine 6.1.6 update released!</p>
 						<p><strong>August 15, 2017:</strong> Hello Fangaming Time Capsule + Launcher released!</p>
 						<p><strong>May 19, 2017:</strong> Super Mario Dynamo 1.1 update released!</p>
@@ -547,6 +548,11 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-cd"></i> Games</h4>
 					</div>
 					<div class="panel-body">
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="The Shroom Project" data-toggle="modal" data-target="#tspModal">
+								<img class="img-responsive gallery-image" src="img/tsp.png" alt="">
+							</a>
+						</div></div>
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Mario Editor" data-toggle="modal" data-target="#meModal">
 								<img class="img-responsive gallery-image" src="img/me1.png" alt="">
@@ -687,6 +693,32 @@ header.carousel .fill {
 	})();
 	</script>
 	
+	<!-- TSP Modal -->
+	<div class="modal fade" id="tspModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">The Shroom Project</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/MFy92lwT6KU?modestbranding=1&controls=2"></iframe>
+					</div>
+					<br>
+					<p>The zombie apocalypse is nigh! The world is in utter chaos, and death is commonplace. A malicious group is responsible for all of this destruction, and is busy at work on a dark scheme known as The Shroom Project. Play as one of two characters, join a rag tag team known as The Resistance, and fight back against a mysterious, yet, familiar face!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="https://gamejolt.com/games/the-shroom-project/306245" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'theshroomproject');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
 	<!-- Editor Modal -->
 	<div class="modal fade" id="meModal" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -812,32 +844,6 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/yoshi-tanks/downloads/yoshi-tanks" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'yoshitanks');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- Ztar Modal -->
-	<div class="modal fade" id="smbztModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Mario Bros: Ztar Turmoil</h4>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/i2ACsdYqk8k?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>A dark force has begun to sweep over the Mushroom Kingdom. Guns have been introduced into the world mysteriously, and are being used to bring about death and destruction. It is up to Mario (or Luigi) to save the Mushroom Kingdom from the Ztars.</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/super-mario-bros-ztar-turmoil/downloads/super-mario-bros-ztar-turmoil" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'ztarturmoil');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
