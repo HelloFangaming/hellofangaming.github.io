@@ -496,6 +496,7 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-bullhorn"></i> Latest News</h4>
 					</div>
 					<div class="panel-body">
+						<p><strong>February 14, 2018:</strong> Shroom Editor is now available for download!</p>
 						<p><strong>January 29, 2018:</strong> Mario Editor 1.1 update released!</p>
 						<p><strong>December 22, 2017:</strong> The Shroom Project is now available for download!</p>
 						<p><strong>December 15, 2017:</strong> Hello Mario Engine 6.1.6 update released!</p>
@@ -549,6 +550,11 @@ header.carousel .fill {
 						<h4><i class="glyphicon glyphicon-cd"></i> Games</h4>
 					</div>
 					<div class="panel-body">
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Shroom Editor" data-toggle="modal" data-target="#seModal">
+								<img class="img-responsive gallery-image" src="img/se2.png" alt="">
+							</a>
+						</div></div>
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="The Shroom Project" data-toggle="modal" data-target="#tspModal">
 								<img class="img-responsive gallery-image" src="img/tsp.png" alt="">
@@ -694,6 +700,34 @@ header.carousel .fill {
 	})();
 	</script>
 	
+	<!-- Shroom Editor Modal -->
+	<div class="modal fade" id="seModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Shroom Editor</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/hGtmb0_1rwI?modestbranding=1&controls=2"></iframe>
+					</div>
+					<br>
+					<p>The Shroom Project meets Mario Editor! The resistance is back, and this time, you get to create their adventures! Build your own levels with guns and blood with this easy to use level editor!</p>
+					<p>Want to share your level with others? Want to try out levels others have made? Check out the Shroom Editor Showcase!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="http://www.indiedb.com/games/shroom-editor/downloads/shroom-editor" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'shroomeditor');"><i class="glyphicon glyphicon-download-alt"></i> Download on Indie DB</a>
+					<a href="http://shroomeditor.us.to/" class="btn btn-red" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'shroomeditorshowcase');"><i class="glyphicon glyphicon-search"></i> Showcase</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
 	<!-- TSP Modal -->
 	<div class="modal fade" id="tspModal" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -720,7 +754,7 @@ header.carousel .fill {
 		</div>
 	</div>
 	
-	<!-- Editor Modal -->
+	<!-- Mario Editor Modal -->
 	<div class="modal fade" id="meModal" role="dialog">
 		<div class="modal-dialog modal-lg">
 		
