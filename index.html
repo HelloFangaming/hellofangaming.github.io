@@ -419,11 +419,21 @@ header.carousel .fill {
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 			<li data-target="#myCarousel" data-slide-to="3"></li>
 			<li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
 		</ol>
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
+				<div class="fill" style="background-image:url('img/carousel/smpCarousel.png');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Super Mario Prism</h2>
+					<h4>Hello Fangaming's first 3D Mario platformer!</h4>
+					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#smpModal"><i class="fa fa-play"></i> More Info</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
 				<div class="fill" style="background-image:url('img/carousel/tspCarousel.png');"></div>
 				<div class="carousel-caption alphabox">
 					<h2>The Shroom Project</h2>
@@ -498,6 +508,7 @@ header.carousel .fill {
 						<h4><i class="fa fa-bullhorn"></i> Latest News</h4>
 					</div>
 					<div class="panel-body">
+						<p><strong>March 15, 2019:</strong> Super Mario Prism is now available for download!</p>
 						<p><strong>February 1, 2019:</strong> Mario Editor 1.3 and Shroom Editor 1.1 updates released!</p>
 						<p><strong>November 25, 2018:</strong> Hello Mario Engine 6.2.1 update released!</p>
 						<p><strong>November 16, 2018:</strong> Mario Editor 1.2 update released!</p>
@@ -557,6 +568,11 @@ header.carousel .fill {
 						<h4><i class="fa fa-gamepad"></i> Play</h4>
 					</div>
 					<div class="panel-body">
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Super Mario Prism" data-toggle="modal" data-target="#smpModal">
+								<img class="img-responsive gallery-image" src="img/smp1.png" alt="">
+							</a>
+						</div></div>
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="The Shroom Project" data-toggle="modal" data-target="#tspModal">
 								<img class="img-responsive gallery-image" src="img/tsp.png" alt="">
@@ -705,6 +721,33 @@ header.carousel .fill {
 	})();
 	</script>
 	
+	<!-- SMP Modal -->
+	<div class="modal fade" id="smpModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Super Mario Prism</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/FYqtgVlv1Xg?modestbranding=1&controls=2"></iframe>
+					</div>
+					<br>
+					<p>The Sprixie princess has been trapped in one of the painting worlds! It is now up to Mario to rescue her by collecting the power stars to restore color to the paintings in this 3D platformer!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="https://www.indiedb.com/games/super-mario-prism/downloads/super-mario-prism" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'prism');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Super Mario Prism.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
 	<!-- Shroom Editor Modal -->
 	<div class="modal fade" id="seModal" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -725,6 +768,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/shroom-editor/downloads/shroom-editor" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'shroomeditor');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Shroom Editor.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<a href="http://shroomeditor.us.to/" class="btn btn-red" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'shroomeditorshowcase');"><i class="fa fa-search"></i> Showcase</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
@@ -752,6 +796,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/the-shroom-project/downloads/the-shroom-project" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'theshroomproject');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/The Shroom Project.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
@@ -779,6 +824,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/mario-editor/downloads/mario-editor" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'marioeditor');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Mario Editor.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<a href="http://marioeditor.us.to/" class="btn btn-red" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'marioeditorshowcase');"><i class="fa fa-search"></i> Showcase</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
@@ -806,6 +852,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/hello-fangaming-collection/downloads/hello-fangaming-collection" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellofangamingcollection');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Hello Fangaming Collection.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
@@ -832,6 +879,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/super-mario-dynamo/downloads/super-mario-dynamo" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'dynamo');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Super Mario Dynamo.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
@@ -858,6 +906,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/super-mario-eclipse/downloads/super-mario-eclipse" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'eclipse');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Super Mario Eclipse.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
@@ -884,6 +933,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/yoshi-tanks/downloads/yoshi-tanks" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'yoshitanks');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Yoshi Tanks.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
@@ -910,6 +960,7 @@ header.carousel .fill {
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/hello-fangaming-time-capsule-launcher/downloads/hello-fangaming-time-capsule" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'timecapsule');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Hello Fangaming Time Capsule.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
