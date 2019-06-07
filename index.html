@@ -425,6 +425,15 @@ header.carousel .fill {
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
+				<div class="fill" style="background-image:url('img/carousel/tsgCarousel.png');"></div>
+				<div class="carousel-caption alphabox">
+					<h2>Toadette's Sweets Gallery</h2>
+					<h4>The delicious 3D platformer!</h4>
+					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#tsgModal"><i class="fa fa-play"></i> More Info</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
 				<div class="fill" style="background-image:url('img/carousel/smpCarousel.png');"></div>
 				<div class="carousel-caption alphabox">
 					<h2>Super Mario Prism</h2>
@@ -469,15 +478,6 @@ header.carousel .fill {
 					<p></p>
 				</div>
 			</div>
-			<div class="item">
-				<div class="fill" style="background-image:url('img/carousel/smeCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>Super Mario Eclipse</h2>
-					<h4>Colorful Mario platforming with challenging puzzles!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#smeModal"><i class="fa fa-play"></i> More Info</a>
-					<p></p>
-				</div>
-			</div>
 		</div>
 
 		<!-- Controls -->
@@ -508,6 +508,7 @@ header.carousel .fill {
 						<h4><i class="fa fa-bullhorn"></i> Latest News</h4>
 					</div>
 					<div class="panel-body">
+						<p><strong>June 7, 2019:</strong> Toadette's Sweets Gallery is now available for download!</p>
 						<p><strong>April 23, 2019:</strong> Super Mario Prism 1.0.3 bugfix update released!</p>
 						<p><strong>March 24, 2019:</strong> Super Mario Prism 1.0.2 bugfix update released!</p>
 						<p><strong>March 17, 2019:</strong> Super Mario Prism 1.0.1 bugfix update released!</p>
@@ -571,6 +572,11 @@ header.carousel .fill {
 						<h4><i class="fa fa-gamepad"></i> Play</h4>
 					</div>
 					<div class="panel-body">
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Toadette's Sweets Gallery" data-toggle="modal" data-target="#tsgModal">
+								<img class="img-responsive gallery-image" src="img/tsg1.png" alt="">
+							</a>
+						</div></div>
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Super Mario Prism" data-toggle="modal" data-target="#smpModal">
 								<img class="img-responsive gallery-image" src="img/smp1.png" alt="">
@@ -723,6 +729,33 @@ header.carousel .fill {
 		(d.head || d.body).appendChild(s);
 	})();
 	</script>
+	
+	<!-- TSG Modal -->
+	<div class="modal fade" id="tsgModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Toadette's Sweets Gallery</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/hWuG9yVOyto?modestbranding=1&controls=2"></iframe>
+					</div>
+					<br>
+					<p>The Sweets Gallery is an exhibit full of magical dessert paintings containing worlds within them. The ever curious Captain Toad was exploring these worlds when all of a sudden, the paintings lost their magic, and Captain Toad was left trapped inside! It is now up to Toadette to collect the power stars needed to restore magic to the paintings and rescue Captain Toad in this 3D platformer!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="https://www.indiedb.com/games/toadettes-sweets-gallery/downloads/toadettes-sweets-gallery" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'toadette');"><i class="fa fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Toadette's Sweets Gallery.html" class="btn btn-blue" target="_blank"><i class="fa fa-info"></i> Info</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 	
 	<!-- SMP Modal -->
 	<div class="modal fade" id="smpModal" role="dialog">
