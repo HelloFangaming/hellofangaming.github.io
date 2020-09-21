@@ -17,7 +17,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
 	
 	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/solid.min.css" integrity="sha512-QN7X/bUbbeel9bbq6JVNJXk1Zowt+n+QPN+DjhEmTa4TdL1YPCsCey5JrvfRW8xp28LDYgGG/waNVdrhwMQmVQ==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css" integrity="sha512-AMDXrE+qaoUHsd0DXQJr5dL4m5xmpkGLxXZQik2TvR2VCVKT/XRPQ4e/LTnwl84mCv+eFm92UG6ErWDtGM/Q5Q==" crossorigin="anonymous" />
 
 	<!-- Custom CSS -->
 	<style>
@@ -498,6 +500,7 @@ header.carousel .fill {
 						<h4><i class="fas fa-bullhorn"></i> Latest News</h4>
 					</div>
 					<div class="panel-body">
+						<p><strong>September 21, 2020:</strong> Hello Mario Assets is now available for download!</p>
 						<p><strong>September 5, 2020:</strong> Super Crown Land SAGE 2020 update released!</p>
 						<p><strong>May 15, 2020:</strong> Super Crown Land is now available for download!</p>
 						<p><strong>December 19, 2019:</strong> Mario Editor 1.4 update released!</p>
@@ -623,6 +626,11 @@ header.carousel .fill {
 						<h4><i class="fas fa-tools"></i> Create</h4>
 					</div>
 					<div class="panel-body">
+						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+							<a class="hovertext" href="#" name="Hello Mario Assets" data-toggle="modal" data-target="#hmaModal">
+								<img class="img-responsive gallery-image" src="img/hma.png" alt="">
+							</a>
+						</div></div>
 						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Shroom Editor" data-toggle="modal" data-target="#seModal">
 								<img class="img-responsive gallery-image" src="img/se2.png" alt="">
@@ -1030,6 +1038,32 @@ header.carousel .fill {
 		</div>
 	</div>
 	
+	<!-- HMA Modal -->
+	<div class="modal fade" id="hmaModal" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Hello Mario Assets</h4>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/dDrX0-UERp4?modestbranding=1&controls=2"></iframe>
+					</div>
+					<br>
+					<p>Hello Mario Assets is a collection of hundreds of 3D models and thousands of animations for Unity that you can use to jump start your very own 3D Mario fangame!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="https://hellofangaming.github.io/HelloMarioAssets/" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download on the Official Website</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
 	<!-- HME Modal -->
 	<div class="modal fade" id="hmeModal" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -1048,7 +1082,7 @@ header.carousel .fill {
 					<p>The Hello Mario Engine is an open source Mario engine for GameMaker: Studio that is feature packed, and designed to be easy to expand upon with user friendliness as a priority. The engine is fully documented with thousands of code comments, and includes tons of different powerups, over a hundred different enemies, and much, much more!</p>
 				</div>
 				<div class="modal-footer">
-					<a href="https://hellofangaming.github.io/HelloMarioEngine/" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellomarioengine');"><i class="fas fa-download"></i> Download on the Official Website</a>
+					<a href="https://hellofangaming.github.io/HelloMarioEngine/" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download on the Official Website</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
