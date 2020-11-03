@@ -660,8 +660,8 @@ header.carousel .fill {
 						<h4><i class="fas fa-comment"></i> Comments</h4>
 					</div>
 					<div class="panel-body">
-						<div class="alert alert-warning" role="alert"><strong>Tip:</strong> If you want to talk about a specific game, scroll up, click on the game you want to talk about, and click on the Info button to reach its game page. This helps keep things organized!</div>
-						<div id="disqus_thread" class="col-lg-12"></div>
+						<div class="alert alert-warning" role="alert"><strong>Tip:</strong> If you can't find the game you want to talk about below, scroll up, click on the game you want to talk about, and click on the Info button to reach its game page.</div>
+						<div id="disqus_recommendations" class="col-lg-12"></div>
 					</div>
 				</div>
 			</div>
@@ -722,17 +722,12 @@ header.carousel .fill {
 	ga('send', 'pageview');
 	</script>
 	
-	<!-- Load Disqus Comments -->
-	<script>
-	var disqus_config = function (){
-		this.page.url = "http://hellofangaming.github.io/";
-		this.page.identifier = "INDEX";
-	};
-	(function(){
-		var d = document, s = d.createElement('script');
-		s.src = '//hellofangaming.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
+	<!-- Load Disqus Recommendations -->
+	<script> 
+	(function() {
+	var d = document, s = d.createElement('script');
+	s.src = 'https://hellofangaming.disqus.com/recommendations.js'; s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
 	})();
 	</script>
 	
