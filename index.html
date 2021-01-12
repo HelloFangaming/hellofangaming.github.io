@@ -14,7 +14,7 @@
 	<title>Hello Fangaming</title>
 
 	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous" />
 	
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
@@ -22,355 +22,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css" integrity="sha512-AMDXrE+qaoUHsd0DXQJr5dL4m5xmpkGLxXZQik2TvR2VCVKT/XRPQ4e/LTnwl84mCv+eFm92UG6ErWDtGM/Q5Q==" crossorigin="anonymous" />
 
 	<!-- Custom CSS -->
-	<style>
-/* Global Styles */
-
-html,
-body {
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif;
-}
-
-body {
-	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-	background-image: url('img/watermark.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; 
-}
-
-a, a:active, a:focus {
-	outline: none;
-}
-
-.page-header {
-	color: #A94442;
-}
-
-a {
-	color: #A94442;
-}
-
-a:hover, a:active {
-	color: #401A1A;
-}
-
-a:hover, a:visited, a:link, a:active {
-	text-decoration: none;
-}
-
-hr {
-	visibility: hidden;
-}
-
-/* Home Page Carousel */
-
-header.carousel {
-	height: 30vw;
-	min-height: 50%;
-}
-
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-	height: 100%;
-}
-
-header.carousel .fill {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-	image-rendering: pixelated;
-}
-
-/* Panel Styles */
-
-.panel {
-	background:rgba(255,255,255,0);
-}
-
-.panel-default > .panel-heading {
-	background:rgba(136,0,0,0.75);
-	color: #ffffff;
-}
-
-.panel-default > .panel-body {
-	background:rgba(255,255,255,0.75);
-}
-
-.modal-header {
-	background: #880000;
-	color: #ffffff;
-}
-
-.modal-header > .close {
-	color: #ffffff;
-	opacity: 1;
-}
-
-/* Header Styles */
-
-.navbar-default {
-	background-color: #880000;
-	border-color: #660000;
-}
-
-.navbar-default .navbar-brand {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #ee0000;
-}
-
-.navbar-default .navbar-text {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-nav > li > a {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #ee0000;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ee0000;
-	background-color: #660000;
-}
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ee0000;
-	background-color: #660000;
-}
-
-.navbar-default .navbar-toggle {
-	border-color: #660000;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #660000;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ffffff;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	border-color: #ffffff;
-}
-
-.navbar-default .navbar-link {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-link:hover {
-	color: #ee0000;
-}
-
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #ffffff;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ee0000;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ee0000;
-		background-color: #660000;
-	}
-}
-
-/* Footer Styles */
-
-.footer-in {
-	margin: 15px 0;
-	color: #ffffff;
-}
-
-.footer-in a {
-	color: #ffffff;
-}
-
-.footer-in a:hover {
-	color: #ee0000;
-}
-
-.footer-red {
-	background-color: #880000;
-}
-
-/* Button Styles */
-
-.btn-green {
-	color: white !important;
-	background: #7CBB00;
-	border-color: #7CBB00;
-}
-
-.btn-green:hover {
-	color: white !important;
-	background: #6ba200;
-	border-color: #6ba200;
-}
-
-.btn-yellow {
-	color: white !important;
-	background: #FFBB00;
-	border-color: #FFBB00;
-}
-
-.btn-yellow:hover {
-	color: white !important;
-	background: #e6a800;
-	border-color: #e6a800;
-}
-
-.btn-red {
-	color: white !important;
-	background: #F65314;
-	border-color: #F65314;
-}
-
-.btn-red:hover {
-	color: white !important;
-	background: #e84709;
-	border-color: #e84709;
-}
-
-.btn-blue {
-	color: white !important;
-	background: #00A1F1;
-	border-color: #00A1F1;
-}
-
-.btn-blue:hover {
-	color: white !important;
-	background: #0090d8;
-	border-color: #0090d8;
-}
-
-.btn-hellofangaming {
-	color: white !important;
-	background: #880000;
-	border-color: #880000;
-}
-
-.btn-hellofangaming:hover {
-	color: white !important;
-	background: #6f0000;
-	border-color: #6f0000;
-}
-
-/* Random Stuff */
-
-.social-media {
-	background: #880000;
-	color: white;
-	opacity: 0.75;
-	padding-top: 35px;
-	font-size: 50px;
-	width: 120px;
-	height: 120px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	border-radius: 50%;
-}
-
-.social-media:hover {
-	color: white;
-	opacity: 1;
-}
-
-.alphabox {
-	background:rgba(0,0,0,0.2);
-}
-
-.invisiwidth {
-	width: 100%;
-}
-
-.img-fill {
-	width: 100%;
-}
-
-.gallery-item {
-	background-color: #880000;
-	padding: 2px;
-	opacity: 0.6;
-}
-
-.gallery-item:hover {
-	opacity: 1.0;
-}
-
-.gallery-item-outer {
-	padding: 10px;
-}
-
-.gallery-image {
-	width: 100%;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.hovertext:after {
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 20px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff;
-}
-
-.hovertext-random:after {
-	font-size: 70%;
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 10px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff;
-}
-
-/* Responsive Styles */
-
-@media(max-width:991px) {
-	.customer-img,
-	.img-related {
-		margin-bottom: 30px;
-	}
-}
-
-@media(max-width:767px) {
-	.img-portfolio {
-		margin-bottom: 15px;
-	}
-
-	header.carousel .carousel {
-		height: 70%;
-	}
-}
-	</style>
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	
+	<link rel="stylesheet" href="styles.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 
 </head>
@@ -378,42 +30,22 @@ header.carousel .fill {
 <body id="home">
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-dark fixed-top" role="navigation">
 		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand smoothscroll" href="#home"><i class="fas fa-globe-americas"></i> Hello Fangaming</a>
+			<a class="navbar-brand smoothscroll" href="#home"><i class="fas fa-globe-americas"></i> Hello Fangaming</a>
+			<div class="navbar-expand">
+				<div class="navbar-nav">
+					<a class="nav-link smoothscroll" href="#play">Play</a>
+					<a class="nav-link smoothscroll" href="#create">Create</a>
+					<a class="nav-link smoothscroll" href="#comments">Comments</a>
+					<a class="nav-link" href="/wiki/">Wiki</a>
+				</div>
 			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a class="smoothscroll" href="#play">Play</a>
-					</li>
-					<li>
-						<a class="smoothscroll" href="#create">Create</a>
-					</li>
-					<li>
-						<a class="smoothscroll" href="#comments">Comments</a>
-					</li>
-					<li>
-						<a href="/wiki/">Wiki</a>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
 		</div>
-		<!-- /.container -->
 	</nav>
 
 	<!-- Header Carousel -->
-	<header id="myCarousel" class="carousel slide">
+	<header id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -425,59 +57,61 @@ header.carousel .fill {
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
-			<div class="item active">
+			<div class="carousel-item active" data-interval="5000">
 				<div class="fill" style="background-image:url('img/carousel/sclCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>Super Crown Land</h2>
-					<h4>Starring Bowsette!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#sclModal"><i class="fas fa-play"></i> More Info</a>
+				<div class="carousel-caption">
+					<h1>Super Crown Land</h1>
+					<h5>Starring Bowsette!</h5>
+					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#sclModal"><i class="fas fa-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
-			<div class="item">
+			<div class="carousel-item">
 				<div class="fill" style="background-image:url('img/carousel/tsgCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>Toadette's Sweets Gallery</h2>
-					<h4>The delicious 3D platformer!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#tsgModal"><i class="fas fa-play"></i> More Info</a>
+				<div class="carousel-caption">
+					<h1>Toadette's Sweets Gallery</h1>
+					<h5>The delicious 3D platformer!</h5>
+					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#tsgModal"><i class="fas fa-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
-			<div class="item">
+			<div class="carousel-item">
 				<div class="fill" style="background-image:url('img/carousel/tspCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>The Shroom Project</h2>
-					<h4>Guns, blood, shrooms, and zombies!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#tspModal"><i class="fas fa-play"></i> More Info</a>
+				<div class="carousel-caption">
+					<h1>The Shroom Project</h1>
+					<h5>Guns, blood, shrooms, and zombies!</h5>
+					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#tspModal"><i class="fas fa-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
-			<div class="item">
+			<div class="carousel-item">
 				<div class="fill" style="background-image:url('img/carousel/hfcCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>Hello Fangaming Collection</h2>
-					<h4>Celebrating 10 years of fangaming!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#hfcModal"><i class="fas fa-play"></i> More Info</a>
+				<div class="carousel-caption">
+					<h1>Hello Fangaming Collection</h1>
+					<h5>Celebrating 10 years of fangaming!</h5>
+					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#hfcModal"><i class="fas fa-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
-			<div class="item">
+			<div class="carousel-item">
 				<div class="fill" style="background-image:url('img/carousel/smdCarousel.png');"></div>
-				<div class="carousel-caption alphabox">
-					<h2>Super Mario Dynamo</h2>
-					<h4>Hardcore platforming and wall jumps!</h4>
-					<a href="#" class="btn btn-hellofangaming" data-toggle="modal" data-target="#smdModal"><i class="fas fa-play"></i> More Info</a>
+				<div class="carousel-caption">
+					<h1>Super Mario Dynamo</h1>
+					<h5>Hardcore platforming and wall jumps!</h5>
+					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#smdModal"><i class="fas fa-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
 		</div>
 
 		<!-- Controls -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
+		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
 		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
+		<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
 		</a>
 	</header>
 
@@ -486,20 +120,16 @@ header.carousel .fill {
 		<hr>
 		<!-- Info Section -->
 		<div class="row">
-			<div class="col-lg-9">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-info-circle"></i> Welcome</h4>
-					</div>
-					<div class="panel-body">
-						<p>Welcome to Hello Fangaming, the official website for Hello Fangaming's games, editors, and more! Want to play some games? Check out the Play section! Looking for an old game? Check out the Time Capsule! Interested in creating your very own Mario adventures? Check out the Create section! Are you looking for more information on Hello Fangaming? Check out the Wiki! Want to leave feedback? Post a comment below! Take fangames to the next dimension!</p>
+			<div class="col-xl-9">
+				<div class="card shadow">
+					<h5 class="card-header"><i class="fas fa-info-circle"></i> Welcome</h5>
+					<div class="card-body">
+						<p class="card-text">Welcome to Hello Fangaming, the official website for Hello Fangaming's games, editors, and more! Want to play some games? Check out the Play section! Looking for an old game? Check out the Time Capsule! Interested in creating your very own Mario adventures? Check out the Create section! Are you looking for more information on Hello Fangaming? Check out the Wiki! Want to leave feedback? Post a comment below! Take fangames to the next dimension!</p>
 					</div>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-bullhorn"></i> Latest News</h4>
-					</div>
-					<div class="panel-body">
+				<div class="card shadow">
+					<h5 class="card-header"><i class="fas fa-bullhorn"></i> Latest News</h5>
+					<div class="card-body">
 						<p><strong>September 21, 2020:</strong> Hello Mario Assets is now available for download!</p>
 						<p><strong>September 5, 2020:</strong> Super Crown Land SAGE 2020 update released!</p>
 						<p><strong>May 15, 2020:</strong> Super Crown Land is now available for download!</p>
@@ -526,34 +156,30 @@ header.carousel .fill {
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
-				<div id="randBox" class="panel panel-default hidden-md hidden-sm hidden-xs" style="display:none">
-					<div class="panel-heading">
-						<h4><i class="fas fa-clock"></i> Time Capsule</h4>
-					</div>
-					<div class="panel-body">
-						<div class="col-xs-12 gallery-item">
-							<a id="randLink" class="hovertext-random" href="#" data-toggle="modal" data-target="#randomModal">
-								<img id="randThumb" class="img-responsive gallery-image" alt="">
+			<div class="col-xl-3">
+				<div id="randBox" class="card shadow d-none d-xl-block" style="display:none">
+					<h5 class="card-header"><i class="fas fa-clock"></i> Time Capsule</h5>
+					<div class="card-body">
+						<div class="col-12 gallery-item">
+							<a id="randLink" class="hovertext hovertext-random" href="#" data-toggle="modal" data-target="#randomModal">
+								<img id="randThumb" class="img-fluid gallery-image" alt="">
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-cloud"></i> Social Media</h4>
-					</div>
-					<div class="panel-body">
-						<div class="col-xs-4 col-lg-12 text-center">
+				<div class="card shadow">
+					<h5 class="card-header"><i class="fas fa-cloud"></i> Social Media</h5>
+					<div class="card-body text-center"><div class="row">
+						<div class="col-4 col-xl-12">
 							<a href="https://www.youtube.com/c/HelloFangaming" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'youtube');" class="fab fa-youtube social-media" title="Hello Fangaming YouTube"></a>
 						</div>
-						<div class="col-xs-4 col-lg-12 text-center">
+						<div class="col-4 col-xl-12">
 							<a href="https://twitter.com/HelloFangaming" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'twitter');" class="fab fa-twitter social-media" title="Hello Fangaming Twitter"></a>
 						</div>
-						<div class="col-xs-4 col-lg-12 text-center">
+						<div class="col-4 col-xl-12">
 							<a href="https://discordapp.com/invite/9YbSDRD" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'marioeditordiscord');" class="fab fa-discord social-media" title="Mario Editor Discord"></a>
 						</div>
-					</div>
+					</div></div>
 				</div>
 			</div>
 		</div>
@@ -561,58 +187,56 @@ header.carousel .fill {
 		<hr id="play">
 		<!-- Play Section -->
 		<div class="row">
-			<div class="col-xs-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-gamepad"></i> Play</h4>
-					</div>
-					<div class="panel-body">
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+			<div class="col-12">
+				<div class="card shadow">
+					<h5 class="card-header"><i class="fas fa-gamepad"></i> Play</h5>
+					<div class="card-body"><div class="row">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Super Crown Land" data-toggle="modal" data-target="#sclModal">
-								<img class="img-responsive gallery-image" src="img/scl3.png" alt="">
+								<img class="img-fluid gallery-image" src="img/scl3.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Toadette's Sweets Gallery" data-toggle="modal" data-target="#tsgModal">
-								<img class="img-responsive gallery-image" src="img/tsg1.png" alt="">
+								<img class="img-fluid gallery-image" src="img/tsg1.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Super Mario Prism" data-toggle="modal" data-target="#smpModal">
-								<img class="img-responsive gallery-image" src="img/smp1.png" alt="">
+								<img class="img-fluid gallery-image" src="img/smp1.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="The Shroom Project" data-toggle="modal" data-target="#tspModal">
-								<img class="img-responsive gallery-image" src="img/tsp.png" alt="">
+								<img class="img-fluid gallery-image" src="img/tsp.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
-								<img class="img-responsive gallery-image" src="img/hfc.png" alt="">
+								<img class="img-fluid gallery-image" src="img/hfc.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#smdModal">
-								<img class="img-responsive gallery-image" src="img/smd.png" alt="">
+								<img class="img-fluid gallery-image" src="img/smd.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#smeModal">
-								<img class="img-responsive gallery-image" src="img/sme.png" alt="">
+								<img class="img-fluid gallery-image" src="img/sme.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#ytModal">
-								<img class="img-responsive gallery-image" src="img/ytanks.png" alt="">
+								<img class="img-fluid gallery-image" src="img/ytanks.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Hello Fangaming Time Capsule" data-toggle="modal" data-target="#timecapsuleModal">
-								<img class="img-responsive gallery-image" src="img/launcher4.png" alt="">
+								<img class="img-fluid gallery-image" src="img/launcher4.png" alt="">
 							</a>
 						</div></div>
-					</div>
+					</div></div>
 				</div>
 			</div>
 		</div>
@@ -620,33 +244,31 @@ header.carousel .fill {
 		<hr id="create">
 		<!-- Create Section -->
 		<div class="row">
-			<div class="col-xs-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-tools"></i> Create</h4>
-					</div>
-					<div class="panel-body">
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+			<div class="col-12">
+				<div class="card shadow">
+					<h5 class="card-header"><i class="fas fa-tools"></i> Create</h5>
+					<div class="card-body"><div class="row">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Hello Mario Assets" data-toggle="modal" data-target="#hmaModal">
-								<img class="img-responsive gallery-image" src="img/hma.png" alt="">
+								<img class="img-fluid gallery-image" src="img/hma.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Shroom Editor" data-toggle="modal" data-target="#seModal">
-								<img class="img-responsive gallery-image" src="img/se2.png" alt="">
+								<img class="img-fluid gallery-image" src="img/se2.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Mario Editor" data-toggle="modal" data-target="#meModal">
-								<img class="img-responsive gallery-image" src="img/me1.png" alt="">
+								<img class="img-fluid gallery-image" src="img/me1.png" alt="">
 							</a>
 						</div></div>
-						<div class="col-md-4 col-sm-6 gallery-item-outer"><div class="gallery-item">
+						<div class="col-lg-4 col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Hello Mario Engine" data-toggle="modal" data-target="#hmeModal">
-								<img class="img-responsive gallery-image" src="img/hme.png" alt="">
+								<img class="img-fluid gallery-image" src="img/hme.png" alt="">
 							</a>
 						</div></div>
-					</div>
+					</div></div>
 				</div>
 			</div>
 		</div>
@@ -654,14 +276,12 @@ header.carousel .fill {
 		<hr id="comments">
 		<!-- Comments Section -->
 		<div class="row">
-			<div class="col-xs-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-comment"></i> Comments</h4>
-					</div>
-					<div class="panel-body">
+			<div class="col-12">
+				<div class="card shadow">
+					<h5 class="card-header"><i class="fas fa-comment"></i> Comments</h5>
+					<div class="card-body">
 						<div class="alert alert-warning" role="alert"><strong>Tip:</strong> If you want to talk about a specific game, scroll up, click on the game you want to talk about, and click on the Info button to reach its game page. This helps keep things organized!</div>
-						<div id="disqus_thread" class="col-lg-12"></div>
+						<div id="disqus_thread" class="col-xl-12"></div>
 					</div>
 				</div>
 			</div>
@@ -674,20 +294,18 @@ header.carousel .fill {
 	<!-- Footer -->
 	<div class="footer-red">
 		<div class="container">
-			<div class="row footer-in">
-				<div class="col-lg-12">
-					<p class="pull-right"><a class="glyphicon glyphicon-chevron-up smoothscroll" href="#home"></a></p>
-					<p><strong>2006-<script>var d = new Date(); document.write(d.getFullYear());</script> Hello Fangaming</strong></p>
-				</div>
+			<div class="footer-in">
+				<strong><span>2006-<script>var d = new Date(); document.write(d.getFullYear());</script> Hello Fangaming</span></strong>
+				<span class="float-right"><a class="fas fa-angle-up smoothscroll" href="#home"></a></span>
 			</div>
 		</div>
 	</div>
 
 	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=" crossorigin="anonymous"></script>
 	
 	<!-- Smooth Scroller -->
 	<script>
@@ -703,13 +321,6 @@ header.carousel .fill {
 			}
 		});
 	});
-	</script>
-
-	<!-- Script to Activate the Carousel -->
-	<script>
-	$('.carousel').carousel({
-		interval: 5000 //changes the speed
-	})
 	</script>
 	
 	<!-- Google Analytics -->
@@ -743,8 +354,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Super Crown Land</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Crown Land</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -770,8 +381,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Toadette's Sweets Gallery</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Toadette's Sweets Gallery</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -797,8 +408,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Super Mario Prism</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Mario Prism</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -824,8 +435,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Shroom Editor</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Shroom Editor</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -853,8 +464,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">The Shroom Project</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">The Shroom Project</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -880,8 +491,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Mario Editor</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Mario Editor</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -910,8 +521,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Hello Fangaming Collection</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Hello Fangaming Collection</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -937,8 +548,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Super Mario Dynamo</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Mario Dynamo</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -964,8 +575,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Super Mario Eclipse</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Super Mario Eclipse</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -991,11 +602,11 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Yoshi Tanks</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Yoshi Tanks</h4>
 				</div>
 				<div class="modal-body">
-					<img class="img-responsive img-fill" src="img/ytanks.png">
+					<img class="img-fluid img-fill" src="img/ytanks.png">
 					<br>
 					<p>In Yoshi Tanks, the aim of the game is to take out all of your opponent tanks, whether they are your friends, or AI controlled.</p>
 				</div>
@@ -1016,8 +627,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Hello Fangaming Time Capsule + Launcher</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Hello Fangaming Time Capsule + Launcher</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -1043,8 +654,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Hello Mario Assets</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Hello Mario Assets</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -1069,8 +680,8 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 class="modal-title">Hello Mario Engine</h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Hello Mario Engine</h4>
 				</div>
 				<div class="modal-body">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -1095,11 +706,11 @@ header.carousel .fill {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
+					<h5 id="randName" class="modal-title"></h5>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 id="randName" class="modal-title"></h4>
 				</div>
 				<div class="modal-body">
-					<img id="randImg" class="img-responsive img-fill">
+					<img id="randImg" class="img-fluid img-fill">
 					<br>
 					<p id="randDesc"></p>
 					<p>This game, and more, can be found in the Hello Fangaming Time Capsule!</p>
