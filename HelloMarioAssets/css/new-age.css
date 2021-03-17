@@ -346,6 +346,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-decoration: none;
 }
 
+.modal-dialog {
+    min-width: 70%;
+}
+
 .bg-primary {
   background: #880000 !important;
 }
@@ -459,4 +463,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .hme-sc {
     background: url("../img/showcase_hme.png"), #000000;
+}
+
+.im-bg {
+    background: url("../img/bg_im.png"), #000000;
 }
