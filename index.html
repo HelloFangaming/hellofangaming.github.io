@@ -127,7 +127,7 @@
 				<div class="card shadow">
 					<h5 class="card-header"><i class="fas fa-info-circle"></i> Welcome</h5>
 					<div class="card-body">
-						<p class="card-text">Welcome to Hello Fangaming, the official website for Hello Fangaming's games, editors, and more! Want to play some games? Check out the Play section! Looking for an old game? Check out the Time Capsule! Interested in creating your very own Mario adventures? Check out the Create section! Are you looking for more information on Hello Fangaming? Check out the Wiki! Do you want to find out about new and upcoming projects, and leave feedback? Check out the Social Media section! Take fangames to the next dimension!</p>
+						<p class="card-text">Welcome to Hello Fangaming, the official website for Hello Fangaming's projects! Want to play some games? Check out the Play section! Looking for an old game? Check out the Time Capsule! Interested in creating your very own Mario adventures? Check out the Create section! Are you looking for more information on Hello Fangaming? Check out the Wiki! Do you want to find out about new and upcoming projects, and leave feedback? Check out the Social Media section! Take fangames to the next dimension!</p>
 					</div>
 				</div>
 				<div class="card shadow">
@@ -161,15 +161,17 @@
 				</div>
 			</div>
 			<div class="col-xl-3">
-				<div id="randBox" class="card shadow d-none d-xl-block" style="display:none">
+				<div id="randBox" class="card shadow" style="display:none">
 					<h5 class="card-header"><i class="fas fa-clock"></i> Time Capsule</h5>
-					<div class="card-body">
+					<div class="card-body text-center"><div class="row"><div class="col-md-6 col-xl-12 offset-md-3 offset-xl-0">
 						<div class="col-12 gallery-item">
 							<a id="randLink" class="hovertext hovertext-random" href="#" data-toggle="modal" data-target="#randomModal">
-								<img id="randThumb" class="img-fluid gallery-image" alt="">
+								<img id="randThumb" class="img-fluid gallery-image">
 							</a>
 						</div>
-					</div>
+						<hr>
+						<a class="btn btn-hellofangaming" onclick="LoadRandomGame();"><i class="fas fa-sync-alt"></i> Refresh</a>
+					</div></div></div>
 				</div>
 				<div class="card shadow">
 					<h5 class="card-header"><i class="fas fa-cloud"></i> Social Media</h5>
@@ -221,28 +223,8 @@
 							</a>
 						</div></div>
 						<div class="col-md-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Hello Fangaming Collection" data-toggle="modal" data-target="#hfcModal">
-								<img class="img-fluid gallery-image" src="img/hfc.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Super Mario Dynamo" data-toggle="modal" data-target="#smdModal">
-								<img class="img-fluid gallery-image" src="img/smd.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Super Mario Eclipse" data-toggle="modal" data-target="#smeModal">
-								<img class="img-fluid gallery-image" src="img/sme.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-6 gallery-item-outer"><div class="gallery-item">
-							<a class="hovertext" href="#" name="Yoshi Tanks" data-toggle="modal" data-target="#ytModal">
-								<img class="img-fluid gallery-image" src="img/ytanks.png" alt="">
-							</a>
-						</div></div>
-						<div class="col-md-6 gallery-item-outer"><div class="gallery-item">
 							<a class="hovertext" href="#" name="Hello Fangaming Time Capsule" data-toggle="modal" data-target="#timecapsuleModal">
-								<img class="img-fluid gallery-image" src="img/launcher4.png" alt="">
+								<img class="img-fluid gallery-image" src="img/hfc.png" alt="">
 							</a>
 						</div></div>
 					</div></div>
@@ -539,112 +521,6 @@
 		</div>
 	</div>
 	
-	<!-- HFC Modal -->
-	<div class="modal fade" id="hfcModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Hello Fangaming Collection</h5>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/Jj_aDBvnDpA?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>Join Mario and Luigi on their adventure in this ten year anniversary collection! This collection includes an assortment of remastered levels handpicked from a wide variety of fangames released by Hello Fangaming between 2006-2016.</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/hello-fangaming-collection/downloads/hello-fangaming-collection" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'hellofangamingcollection');"><i class="fas fa-download"></i> Download on Indie DB</a>
-					<a href="/wiki/Hello Fangaming Collection.html" class="btn btn-blue" target="_blank"><i class="fas fa-info"></i> Info</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- Dynamo Modal -->
-	<div class="modal fade" id="smdModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Super Mario Dynamo</h5>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/HfqQ2M1a7Eg?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>The people of the Mushroom Kingdom have finally embraced industrialization, and it is all thanks to everyone's favorite plumber, Luigi! Unfortunately, Luigi's greed got the best of him, and the entire kingdom became shrouded in darkness. The thick smog emanating from Luigi's accomplishments have darkened the once bright and colorful kingdom. It is now up to Mario to try and solve this dilemma!</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/super-mario-dynamo/downloads/super-mario-dynamo" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'dynamo');"><i class="fas fa-download"></i> Download on Indie DB</a>
-					<a href="/wiki/Super Mario Dynamo.html" class="btn btn-blue" target="_blank"><i class="fas fa-info"></i> Info</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- Eclipse Modal -->
-	<div class="modal fade" id="smeModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Super Mario Eclipse</h5>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/s9fRD7lNqHQ?modestbranding=1&controls=2"></iframe>
-					</div>
-					<br>
-					<p>The eclipse stars, a source of mythical powers, have been unleashed upon the world. As a result, the entire Mushroom Kingdom has been shrouded in the shadows of an everlasting eclipse. It is up to Mario to collect these stars, and save everyone from an eternal twilight.</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/super-mario-eclipse/downloads/super-mario-eclipse" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'eclipse');"><i class="fas fa-download"></i> Download on Indie DB</a>
-					<a href="/wiki/Super Mario Eclipse.html" class="btn btn-blue" target="_blank"><i class="fas fa-info"></i> Info</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<!-- YTanks Modal -->
-	<div class="modal fade" id="ytModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-		
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Yoshi Tanks</h5>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-				<div class="modal-body">
-					<img class="img-fluid img-fill" src="img/ytanks.png">
-					<br>
-					<p>In Yoshi Tanks, the aim of the game is to take out all of your opponent tanks, whether they are your friends, or AI controlled.</p>
-				</div>
-				<div class="modal-footer">
-					<a href="http://www.indiedb.com/games/yoshi-tanks/downloads/yoshi-tanks" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'yoshitanks');"><i class="fas fa-download"></i> Download on Indie DB</a>
-					<a href="/wiki/Yoshi Tanks.html" class="btn btn-blue" target="_blank"><i class="fas fa-info"></i> Info</a>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
 	<!-- Time Capsule Modal -->
 	<div class="modal fade" id="timecapsuleModal" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -742,6 +618,7 @@
 				</div>
 				<div class="modal-footer">
 					<a href="http://www.indiedb.com/games/hello-fangaming-time-capsule-launcher/downloads/hello-fangaming-time-capsule" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'timecapsule');"><i class="fas fa-download"></i> Download on Indie DB</a>
+					<a href="/wiki/Hello Fangaming Time Capsule.html" class="btn btn-blue" target="_blank"><i class="fas fa-info"></i> Info</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
