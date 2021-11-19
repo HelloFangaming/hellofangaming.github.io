@@ -58,7 +58,16 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-interval="5000">
-				<div class="fill" style="background-image:url('img/im1.png');"></div>
+				<div class="fill" style="background-image:url('img/im4.png');image-rendering:auto;"></div>
+				<div class="carousel-caption">
+					<h1>Isekaisekai</h1>
+					<h5>The ultimate anime theme park!</h5>
+					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#imModal2"><i class="fas fa-play"></i> More Info</a>
+					<p></p>
+				</div>
+			</div>
+			<div class="carousel-item" data-interval="5000">
+				<div class="fill" style="background-image:url('img/im1.png');image-rendering:auto;"></div>
 				<div class="carousel-caption">
 					<h1>Isekai Mario</h1>
 					<h5>The ultimate anime crossover!</h5>
@@ -67,20 +76,11 @@
 				</div>
 			</div>
 			<div class="carousel-item" data-interval="5000">
-				<div class="fill" style="background-image:url('img/scl3.png');background-position:bottom;"></div>
+				<div class="fill" style="background-image:url('img/scl3.png');background-position:bottom;image-rendering:auto;"></div>
 				<div class="carousel-caption">
 					<h1>Super Crown Land</h1>
 					<h5>Starring Bowsette!</h5>
 					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#sclModal"><i class="fas fa-play"></i> More Info</a>
-					<p></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="fill" style="background-image:url('img/tsg1.png');"></div>
-				<div class="carousel-caption">
-					<h1>Toadette's Sweets Gallery</h1>
-					<h5>The delicious 3D platformer!</h5>
-					<a href="#" class="btn btn-hellofangaming btn-lg" data-toggle="modal" data-target="#tsgModal"><i class="fas fa-play"></i> More Info</a>
 					<p></p>
 				</div>
 			</div>
@@ -324,6 +324,33 @@
 	ga('create', 'UA-60777521-2', 'auto');
 	ga('send', 'pageview');
 	</script>
+	
+		<!-- Isekai Mario Scenario Modal -->
+	<div class="modal fade" id="imModal2" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Isekaisekai</h5>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/3CN9d8xME78?modestbranding=1&controls=2"></iframe>
+					</div>
+					<br>
+					<p>Welcome to Isekaisekai, The Ultimate Anime Theme Park! Play anime themed minigames and win coin prizes! Learn about the different characters you can summon for and find out about the wide variety of isekai anime that exist in this exciting theme park!</p>
+				</div>
+				<div class="modal-footer">
+					<a href="https://hellofangaming.itch.io/isekai-mario" class="btn btn-green" target="_blank" onclick="ga('send', 'event', 'a', 'click', 'isekaimario');"><i class="fas fa-download"></i> Download on itch.io</a>
+					<a href="/IsekaiMario/" class="btn btn-blue" target="_blank"><i class="fas fa-globe-americas"></i> Official Website</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 	
 	<!-- Isekai Mario Modal -->
 	<div class="modal fade" id="imModal" role="dialog">
