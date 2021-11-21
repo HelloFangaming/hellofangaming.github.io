@@ -249,7 +249,6 @@ section.bg-primary .feature-item i {
 
 section.editor {
   padding: 150px 0;
-  background-image: url("../img/editor.png");
   background-position: center;
   background-size: cover;
   color: white;
@@ -450,21 +449,21 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .hma-bg {
-    background: url("../img/bg.png"), #000000;
-}
-
-.hma-sc {
-    background: url("../img/showcase.png"), #000000;
+    background-image: url("../img/bg.png");
 }
 
 .hme-bg {
-    background: url("../img/bg_hme.png"), #000000;
+    background-image: url("../img/bg_hme.png");
 }
 
 .hme-sc {
-    background: url("../img/showcase_hme.png"), #000000;
+    background-image: url("../img/showcase_hme.png");
 }
 
 .im-bg {
-    background: url("../img/bg_im.png"), #000000;
+    background-image: url("../img/bg_im.png");
+}
+
+.me-bg {
+    background-image: url("../img/editor.png");
 }
