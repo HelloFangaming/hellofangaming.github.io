@@ -37,7 +37,7 @@
 	
 		<ol class="breadcrumb">
 			<li><a href="/wiki/">Wiki</a></li>
-			<li><a href="/wiki/#other">Other</a></li>
+			<li><a href="/wiki/#games">Games</a></li>
 			<li class="active">Hello Fangaming Time Capsule + Launcher</li>
 		</ol>
 		
@@ -61,6 +61,70 @@
 		<hr>
 		
 		<!-- Item Heading -->
+		<div id="randBox" class="row" style="display:none">
+			<div class="col-lg-12">
+				<h1 class="page-header">Random Game</h1>
+				<div class="col-md-6"><img id="randThumb" class="img-responsive center-block"></div>
+				<div class="col-md-6">
+					<h3 id="randName"></h3>
+					<p><strong>Synopsis: </strong><span id="randDesc"></span></p>
+					<a class="btn btn-primary" onclick="LoadRandomGame();"><i class="glyphicon glyphicon-refresh"></i> Refresh</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.row -->
+		
+		<!-- Item Heading -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Full Games List</h1>
+				<ul>
+					<li><a href="Hello Fangaming Collection.html">Hello Fangaming Collection</a></li>
+					<li><a href="Super Mario Dynamo.html">Super Mario Dynamo</a></li>
+					<li><a href="Super Mario Eclipse.html">Super Mario Eclipse</a></li>
+					<li><a href="Yoshi Tanks.html">Yoshi Tanks</a></li>
+					<li><a href="Super Mario Bros Ztar Turmoil.html">Super Mario Bros: Ztar Turmoil</a></li>
+					<li><a href="Super Mario Bros Mythical Mushrooms.html">Super Mario Bros: Mythical Mushrooms</a></li>
+					<li><a href="Super Mario Bros Restless Reality.html">Super Mario Bros: Restless Reality</a></li>
+					<li><a href="Hello Winter Mario Games 2009.html">Hello Winter Mario Games 2009</a></li>
+					<li><a href="Escape the Ghost House.html">Escape the Ghost House</a></li>
+					<li><a href="Super Mario Bros Seeking Sunshine.html">Super Mario Bros: Seeking Sunshine</a></li>
+					<li><a href="Super Mario Bros Bloody Battles.html">Super Mario Bros: Bloody Battles</a></li>
+					<li><a href="Super Mario Bros Shine Expedition.html">Super Mario Bros: Shine Expedition</a></li>
+					<li><a href="Present Panic.html">Present Panic</a></li>
+					<li><a href="Super Luigi and the Golden Shrooms.html">Super Luigi and the Golden Shrooms</a></li>
+					<li><a href="Bowser's Recruitment.html">Bowser's Recruitment</a></li>
+					<li><a href="Super Mario Bros Fierce Days.html">Super Mario Bros: Fierce Days</a></li>
+					<li><a href="A Koopa's Adventure.html">A Koopa's Adventure</a></li>
+					<li><a href="Super Mario Bros Revenge of Bowser.html">Super Mario Bros: Revenge of Bowser</a></li>
+					<li><a href="Super Mario Subpop.html">Super Mario Subpop</a></li>
+					<li><a href="Super Mario Bros Dual Dash.html">Super Mario Bros: Dual Dash</a></li>
+					<li><a href="Super Mario Bros Crimson Hours.html">Super Mario Bros: Crimson Hours</a></li>
+					<li><a href="Super Mario Bros Shine Pursuit.html">Super Mario Bros: Shine Pursuit</a></li>
+					<li><a href="Mario the Mathematician.html">Mario the Mathematician</a></li>
+					<li><a href="Super Mario Bros Kingdom Troubles.html">Super Mario Bros: Kingdom Troubles</a></li>
+					<li><a href="Save the Goombas.html">Save the Goombas</a></li>
+					<li><a href="Mario's Run.html">Mario's Run</a></li>
+					<li><a href="Super Mario Bros Koopa Chaos.html">Super Mario Bros: Koopa Chaos</a></li>
+					<li><a href="Yoshi Click and Go.html">Yoshi Click and Go</a></li>
+					<li><a href="Super Mario Bros Mushroom Journey.html">Super Mario Bros: Mushroom Journey</a></li>
+					<li><a href="Super Mario Bros Dark Days.html">Super Mario Bros: Dark Days</a></li>
+					<li><a href="Super Mario Bros Bowser's Terror.html">Super Mario Bros: Bowser's Terror</a></li>
+					<li><a href="Super Luigi Paradise.html">Super Luigi Paradise</a></li>
+					<li><a href="Super Mario Bros Kill Bowser.html">Super Mario Bros: Kill Bowser</a></li>
+					<li><a href="Super Mario Bros Coin Quest.html">Super Mario Bros: Coin Quest</a></li>
+					<li><a href="Super Mario Bros Journey to Peach.html">Super Mario Bros: Journey to Peach</a></li>
+					<li><a href="Super Mario Bros Adventure Journey.html">Super Mario Bros: Adventure Journey</a></li>
+					<li><a href="Super Mario Greetings.html">Super Mario Greetings</a></li>
+					<li><a href="Super Mario Bros Hello.html">Super Mario Bros: Hello</a></li>
+					<li><a href="Mario's Journey.html">Mario's Journey</a></li>
+					<li><a href="Mario's Egg.html">Mario's Egg</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.row -->
+		
+		<!-- Item Heading -->
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="page-header">Trivia</h1>
@@ -69,6 +133,7 @@
 					<li>The Hello Fangaming Time Capsule + Launcher made an appearance in the Nintendo Community Fangame Convention in 2017.</li>
 					<li>The launcher was coded in C# using Microsoft Visual Studio.</li>
 					<li>Overwhelmed by the number of games included in this time capsule? Check out the <a href="Game Recommendations.html">Time Capsule Game Recommendations</a> page to get an idea of what game to play.</li>
+					<li>Having issues running some of these games? Check out the <a href="FAQ.html">Frequently Asked Questions</a> page for troubleshooting tips.</li>
 				</ul>
 			</div>
 		</div>
@@ -145,6 +210,9 @@
 		});
 	});
 	</script>
+	
+	<!-- Random Game Script -->
+	<script src="../js/randomgame.js"></script>
 
 </body>
 
