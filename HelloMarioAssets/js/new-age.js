@@ -46,3 +46,15 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+// Image Modal
+function ImageModal(name, img) {
+  $("#iModalName").text(name);
+  $("#iModalImage").attr("src", img);
+}
+
+// Video Modal
+function VideoModal(name, ytcode) {
+  $("#vModalName").text(name);
+  $("#vModalVideo").html('<iframe class="embed-responsive-item" width="512" height="288" src="https://www.youtube.com/embed/'+ytcode+'?modestbranding=1&controls=2"></iframe>');
+}
