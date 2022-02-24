@@ -37,11 +37,10 @@ a:hover, a:visited, a:link, a:active {
 
 .gallery-item {
 	margin-bottom: 25px;
-	opacity: 0.6;
 }
 
 .gallery-item:hover {
-	opacity: 1.0;
+	filter: brightness(120%);
 }
 
 .wikibox {

@@ -351,6 +351,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .bg-primary {
   background: #880000 !important;
+  color: white;
 }
 
 .text-primary {
@@ -388,8 +389,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding: 15px 45px;
 }
 
-.bg-primary {
-  color: white;
+.btn-xxl {
+  font-size: 16px;
+  padding: 23px 68px;
 }
 
 .showcase-box {
@@ -446,6 +448,38 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .legacy {
   color: #880000;
+}
+
+.thumbnail-outer {
+  background-size: 100% 100%;
+  width: 100%;
+  aspect-ratio:16/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail-outer:hover {
+  filter: brightness(120%);
+}
+
+.thumbnail-tall {
+  width:auto;
+  height:80%;
+}
+
+.thumbnail-wide {
+  width:80%;
+  height:auto;
+}
+
+.hover-item:hover {
+  filter: brightness(120%);
+}
+
+.pixel-art {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .hma-bg {
