@@ -117,9 +117,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
+  background-color: black;
   background-position: center;
   background-size: cover;
-  image-rendering: pixelated;
 }
 
 header.masthead .header-content {
@@ -252,6 +252,7 @@ section.editor {
   background-position: center;
   background-size: cover;
   color: white;
+  background-color: black;
 }
 
 section.cta {
