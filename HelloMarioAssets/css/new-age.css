@@ -457,10 +457,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem !important;
 }
 
 .thumbnail-outer:hover {
   filter: brightness(120%);
+  padding: 0.4rem !important;
 }
 
 .thumbnail-tall {
