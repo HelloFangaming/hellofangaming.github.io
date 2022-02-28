@@ -486,7 +486,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .hma-bg {
-    background-image: url("../img/bg.png");
+    background-image: url("../img/bg.webp");
 }
 
 .hme-bg {
@@ -498,7 +498,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .im-bg {
-    background-image: url("../img/bg_im.png");
+    background-image: url("../img/bg_im.webp");
 }
 
 .me-bg {
