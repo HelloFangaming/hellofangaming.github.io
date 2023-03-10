@@ -70,15 +70,37 @@
 					</div>
 				</div>
 				<hr>
-				<p class="blockquote pt-4 pb-4 text-justify"><strong>Isekai Mario</strong> includes a scenario system, where each scenario has its own story, star counter, hub world, etc. Each scenario is its own game. You can play them in any order, and use any playable character in any scenario. The constant stream of new games <strong>Hello Fangaming</strong> has been known for in the past will be coming to an end. <strong>Isekai Mario</strong> will be Hello Fangaming's <strong>main project</strong> for the foreseeable future, and will be updated with new scenarios and playable characters! Going forward, all of Hello Fangaming's future games will be released as scenarios instead of as standalone games. What will the future hold in store for Isekai Mario?</p>
+				<p class="blockquote pt-4 pb-4 text-justify"><strong>Isekai Mario</strong> includes a scenario system, where each scenario has its own story, star counter, and hub world. Each scenario is its own game! You can play them in any order, and use any playable character in any scenario. <strong>Isekai Mario</strong> will be <strong>Hello Fangaming's only 3D Mario fangame project</strong>, and will continue to be updated with new scenarios and playable characters! Going forward, all of Hello Fangaming's future 3D Mario game ideas will be added as scenarios to Isekai Mario rather than being released as standalone games! What will the future hold in store for Isekai Mario?</p>
 			</div>
 		</section>
 		<section class="features" id="news">
 			<div class="container">
 				<div class="section-heading text-center mb-5">
 					<h2>News</h2>
-					<p class="text-muted">Latest version: v1.3</p>
+					<p class="text-muted">Latest version: v1.4</p>
 					<hr>
+				</div>
+				<div class="container-fluid mb-5">
+					<h3 class="pb-4">Isekai Mario v1.4 is now available for download<p class="float-md-right">March 10, 2023</p></h3>
+					
+					<p>It's time for an Isekai Mario x The Shroom Project crossover! Escape the horrors that await at an abandoned lab in Shroom Isekai, a brand new horror game themed scenario! There is also one other scenario included in this update. Get ready for Super Sexy Mario Land!</p>
+					<ul>
+						<li>9 new character models. (Total: 9 Mario, 250 anime)</li>
+						<li>2 new character voices.</li>
+						<li>New scenario added: Super Sexy Mario Land</li>
+						<li>New scenario added: Shroom Isekai</li>
+						<li>Renamed the main story to Isekai Mario: Prologue</li>
+						<li>1 new Isekai Trials level.</li>
+						<li>Replaced one picture in Isekaisekai.</li>
+						<li>Wednesday's Summon 2 is now The Rising of the Shield Hero.</li>
+						<li>Added Double Coins events.</li>
+						<li>Added progress info and more save files to title screen.</li>
+						<li>Added more options to settings menu.</li>
+						<li>Improved camera.</li>
+						<li>Paintings for cleared levels now have a gold frame.</li>
+						<li>Collecting a star now restores health.</li>
+						<li>Bug fixes.</li>
+					</ul>
 				</div>
 				<div class="container-fluid mb-5">
 					<h3 class="pb-4">Isekai Mario Android Edition is now available for download<p class="float-md-right">September 2, 2022</p></h3>
@@ -90,7 +112,7 @@
 					
 					<p>It's time to learn Japanese with the all new Super Nippon Roguelike scenario! Explore randomly generated dungeons, solve Japanese puzzles, and collect the treasures within!</p>
 					<ul>
-						<li>51 new character models. (Total: 9 Mario, 250 anime)</li>
+						<li>42 new character models. (Total: 9 Mario, 241 anime)</li>
 						<li>10 new character voices.</li>
 						<li>New scenario added: Super Nippon Roguelike</li>
 						<li>1 new main story level.</li>
@@ -168,12 +190,16 @@
 					<hr>
 				</div>
 				<div class="container-fluid mb-5">
-					<h3 id="EventName" class="pb-4">Loading</h3>
+					<h3 class="pb-4">Event: <span id="EventName">Please wait...</span></h3>
 					<p id="EventText">Please wait...</p>
 				</div>
 				<div class="container-fluid mb-5">
 					<h3 class="pb-4">Today's Summon Banners: <span style="color:#EEAA00;">66.7% Rate Up!</span></h3>
 					<p id="TodaysSummon">Please wait...</p>
+				</div>
+				<div class="container-fluid mb-5">
+					<h3 class="pb-4">Double Coins Day: <span id="DoubleCoins">Please wait...</span></h3>
+					<p>For every coin you collect, you will receive an additional bonus coin, not including daily mission coins. Available in a different scenario each day!</p>
 				</div>
 			</div>
 		</section>
@@ -183,13 +209,13 @@
 					<h2>Scenarios</h2>
 					<p>Each scenario is a separate game with its own story and star count. Play them in any order!</p>
 				</div>
-				<hr id="mainstory" class="pb-5"><hr class="pb-2"></span>
+				<hr id="prologue" class="pb-5"><hr class="pb-2"></span>
 				<div class="row pb-4 d-flex align-items-center justify-content-center">
 					<div class="col-lg-4">
 						<img class="img-fluid" src="../img/logo_imms.png" loading="lazy">
 					</div>
 					<div class="col-lg-7 offset-lg-1">
-						<h3>Isekai Mario Main Story</h3>
+						<h3>Isekai Mario: Prologue</h3>
 						<hr>
 						<p><strong>Stars:</strong> 90</p>
 						<p><strong>Difficulty:</strong> Easy</p>
@@ -254,7 +280,7 @@
 					<div class="col-lg-7 offset-lg-1">
 						<h3>Isekai Trials</h3>
 						<hr>
-						<p><strong>Stars:</strong> 3</p>
+						<p><strong>Stars:</strong> 4</p>
 						<p><strong>Difficulty:</strong> Expert</p>
 						<p>One day, an otherworldly magic altar was discovered in the middle of the sea in the Mushroom Kingdom. This altar housed magic from another world, and the Royal Magic Institute was formed to research this magic. There is a difficult trial associated with each magic element. Clearing these trials is key to fully understanding this magic. Put your skills to the test by clearing the challenges that await!</p>
 						<p><strong>Locked until you reach level 10.</strong></p>
@@ -371,6 +397,37 @@
 						</a>
 					</div>
 				</div>
+				<hr id="sexy" class="pb-5"><hr class="pb-2"></span>
+				<div class="row pb-4 d-flex align-items-center justify-content-center">
+					<div class="col-lg-4">
+						<img class="img-fluid" src="../img/logo_ssml.png" loading="lazy">
+					</div>
+					<div class="col-lg-7 offset-lg-1">
+						<h3>Super Sexy Mario Land</h3>
+						<hr>
+						<p><strong>Stars:</strong> 5</p>
+						<p><strong>Difficulty:</strong> Moderate</p>
+						<p>Your everyday average Japanese salaryman was on his way home after working overtime, when all of a sudden, he was hit by a truck and died! Oh no! He then reincarnated as Mario and woke up in the Mushroom Kingdom, and he's not the only one! Many others have also reincarnated as Mario, but there can only be one! It's time for one of them to become the REAL Super Mario! Mama mia! It's time for the ultimate fever dream!</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<a href="#" data-toggle="modal" data-target="#modalImg" onclick="ImageModal('Mario vs Lawyers', 'img/scr_mariovslawyers.png')">
+							<img class="img-fluid hover-item shadow" src="img/scr_mariovslawyers.png" loading="lazy">
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<a href="#" data-toggle="modal" data-target="#modalImg" onclick="ImageModal('Sick Dab', 'img/scr_sickdab.png')">
+							<img class="img-fluid hover-item shadow" src="img/scr_sickdab.png" loading="lazy">
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<a href="#" data-toggle="modal" data-target="#modalImg" onclick="ImageModal('Mario vs Lawyers', 'img/scr_mariovslawyers.png')">
+							<img class="img-fluid hover-item shadow" src="img/scr_mariovslawyers.png" loading="lazy">
+						</a>
+					</div>
+				</div>
 				<hr id="nippon" class="pb-5"><hr class="pb-2"></span>
 				<div class="row pb-4 d-flex align-items-center justify-content-center">
 					<div class="col-lg-4">
@@ -399,6 +456,37 @@
 					<div class="col-lg-4">
 						<a href="#" data-toggle="modal" data-target="#modalImg" onclick="ImageModal('Ultra Rare Chest', 'img/scr_ultrararechest.png')">
 							<img class="img-fluid hover-item shadow" src="img/scr_ultrararechest.png" loading="lazy">
+						</a>
+					</div>
+				</div>
+				<hr id="shroom" class="pb-5"><hr class="pb-2"></span>
+				<div class="row pb-4 d-flex align-items-center justify-content-center">
+					<div class="col-lg-4">
+						<img class="img-fluid" src="../img/logo_si.png" loading="lazy">
+					</div>
+					<div class="col-lg-7 offset-lg-1">
+						<h3>Shroom Isekai</h3>
+						<hr>
+						<p><strong>Stars:</strong> 7</p>
+						<p><strong>Difficulty:</strong> Moderate</p>
+						<p>The discovery of a lifetime! Mysterious shrooms from another world have appeared, and thanks to the hard work of researchers from the Royal Magic Institute, the development of a miraculous new drug known as the Isekai Shot has been completed! Once the Isekai Shot has been injected into a patient, they gain the special ability to reincarnate into other worlds! A dream come true for isekai fans! It's time to volunteer as a test subject! Let's go!</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<a href="#" data-toggle="modal" data-target="#modalVid" onclick="VideoModal('Shroom Isekai - Trailer', 'V9KauA-iF4Y')">
+							<img class="img-fluid hover-item shadow" src="img/yt_si.png" loading="lazy">
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<a href="#" data-toggle="modal" data-target="#modalImg" onclick="ImageModal('Abandoned Lab', 'img/scr_abandonedlab.png')">
+							<img class="img-fluid hover-item shadow" src="img/scr_abandonedlab.png" loading="lazy">
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<a href="#" data-toggle="modal" data-target="#modalImg" onclick="ImageModal('Truck-kun Experiment', 'img/scr_truckkun.png')">
+							<img class="img-fluid hover-item shadow" src="img/scr_truckkun.png" loading="lazy">
 						</a>
 					</div>
 				</div>
@@ -462,6 +550,7 @@
 		var name = "";
 		var desc = "Collect ";
 		var summon = "";
+		var doublecoins = "Coming Soon!";
 		switch((new Date()).getMonth()) {
 			case 0:
 				name = "New Year's Mochi";
@@ -512,35 +601,40 @@
 				desc += "Christmas gifts";
 				break;
 		}
-		name += " Hunt Event Available";
-		desc += " and earn 500 coins each! Available until the end of the month! (Main Story Only)";
+		name += " Hunt";
+		desc += " and earn 500 coins each! Available until the end of the month! (Prologue Only)";
 		switch((new Date()).getDay()) {
 			case 1:
 				summon = "Sword Art Online & Princess Connect! Re:Dive";
+				doublecoins = "Isekai Remix";
 				break;
 			case 2:
 				summon = "That Time I Got Reincarnated as a Slime & Tokyo Mirage Sessions #FE";
 				break;
 			case 3:
-				summon = "Touhou & No Game No Life";
+				summon = "Touhou & The Rising of the Shield Hero";
+				doublecoins = "Toadette's Sweets Gallery";
 				break;
 			case 4:
 				summon = "Jump Force & Date A Live";
 				break;
 			case 5:
 				summon = "Re:ZERO -Starting Life in Another World- & Overlord";
+				doublecoins = "Super Crown Land";
 				break;
 			case 6:
 				summon = "Hyperdimension Neptunia & KonoSuba: God's Blessing on This Wonderful World!";
 				break;
 			case 0:
 				summon = "Genshin Impact & Hololive";
+				doublecoins = "Super Sexy Mario Land";
 				break;
 		}
 		$(function() {
 			$("#EventName").text(name);
 			$("#EventText").text(desc);
 			$("#TodaysSummon").text(summon);
+			$("#DoubleCoins").text(doublecoins);
 		});
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
