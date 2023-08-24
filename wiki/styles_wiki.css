@@ -60,8 +60,8 @@ a:hover, a:visited, a:link, a:active {
 /* Header Styles */
 
 .navbar-default {
-	background-color: #880000;
-	border-color: #660000;
+	background-color: #222222;
+	border-color: #222222;
 	border-radius: 0 !important;
 }
 
@@ -70,7 +70,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #ee0000;
+	color: #aaaaaa;
 }
 
 .navbar-default .navbar-text {
@@ -82,16 +82,16 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #ee0000;
+	color: #aaaaaa;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ee0000;
+	color: #aaaaaa;
 	background-color: #660000;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ee0000;
+	color: #aaaaaa;
 	background-color: #660000;
 }
 
@@ -116,7 +116,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .navbar-default .navbar-link:hover {
-	color: #ee0000;
+	color: #aaaaaa;
 }
 
 .modal-dialog {
@@ -128,10 +128,10 @@ a:hover, a:visited, a:link, a:active {
 		color: #ffffff;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ee0000;
+		color: #aaaaaa;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ee0000;
+		color: #aaaaaa;
 		background-color: #660000;
 	}
 }
@@ -148,13 +148,13 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .footer-in a:hover {
-	color: #ee0000;
+	color: #aaaaaa;
 }
 
 footer {
 	position: absolute;
 	bottom: 0;
-	background-color: #880000;
+	background-color: #222222;
 	height: 60px;
 	width: 100%;
 }
