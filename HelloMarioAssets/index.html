@@ -104,7 +104,7 @@
 				</div>
 				<div class="container-fluid mb-5">
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6 mx-auto">
 							<div class="feature-item">
 								<i class="fab fa-unity text-primary"></i>
 								<h3>Hello Mario Assets</h3>
@@ -113,7 +113,7 @@
 								<p id="dl-source" class="text-muted font-italic mt-2"></p>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<!--<div class="col-lg-6">
 							<div class="feature-item">
 								<i class="fab fa-windows text-primary"></i>
 								<h3>Hello Mario Assets Preview</h3>
@@ -121,7 +121,7 @@
 								<a href="https://github.com/HelloFangaming/HelloMarioAssets/releases/download/1.0/Hello.Mario.Assets.Preview.zip" target="_blank" class="btn btn-success btn-xl"><span class="fa fa-download"></span> Download</a>
 								<p id="dl-preview" class="text-muted font-italic mt-2"></p>
 							</div>
-						</div>
+						</div>-->
 						<div class="col-lg-12 text-center mb-5">
 							<a href="#changelog" class="btn btn-info btn-xl" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="changelog"><span class="fas fa-clock"></span> Changelog</a>
 							<div class="collapse text-left" id="changelog">
@@ -174,7 +174,7 @@
 		<script>
 		$(function() {
 			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioAssets/releases/assets/25978264", function(result){$("#dl-source").text(result.download_count + " downloads.");});
-			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioAssets/releases/assets/25978256", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
+			//$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioAssets/releases/assets/25978256", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
 		});
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->

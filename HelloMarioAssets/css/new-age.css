@@ -489,6 +489,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     background-image: url("../img/bg.webp");
 }
 
+.hmf-bg {
+    background-image: url("../img/bg_hmf.webp");
+}
+
 .hme-bg {
     background-image: url("../img/bg_hme.png");
 }
