@@ -97,7 +97,7 @@
 			<div class="container">
 				<div class="section-heading text-center">
 					<h2>Download</h2>
-					<p class="text-muted">Latest version: v1.0</p>
+					<p class="text-muted">Latest version: v1.0.1</p>
 					<hr>
 				</div>
 				<div class="container-fluid mb-5">
@@ -107,7 +107,7 @@
 								<i class="fab fa-unity text-primary"></i>
 								<h3>Hello Mario Framework</h3>
 								<p class="text-muted text-justify">Unity project folder. Designed for Unity 2022.3 LTS and above.</p>
-								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0/Hello.Mario.Framework.v1.0.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
+								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.1/Hello.Mario.Framework.v1.0.1.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
 								<p id="dl-source" class="text-muted font-italic mt-2"></p>
 							</div>
 						</div>
@@ -116,13 +116,18 @@
 								<i class="fab fa-windows text-primary"></i>
 								<h3>Hello Mario Framework Demo</h3>
 								<p class="text-muted text-justify">EXE demo for Windows. Showcases the various features included in the Hello Mario Framework.</p>
-								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0/Hello.Mario.Framework.Demo.v1.0.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
+								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.1/Hello.Mario.Framework.Demo.v1.0.1.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
 								<p id="dl-preview" class="text-muted font-italic mt-2"></p>
 							</div>
 						</div>
 						<div class="col-lg-12 text-center mb-5">
 							<a href="#changelog" class="btn btn-info btn-xl" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="changelog"><span class="fas fa-clock"></span> Changelog</a>
 							<div class="collapse text-left" id="changelog">
+								<hr class="mb-5">
+								<h5><strong>Hello Mario Framework v1.0.1</strong> (March 22, 2024) <a title="View on GitHub" href="https://github.com/HelloFangaming/HelloMarioFramework/commit/aabd7dd24ad1908ee8e18b46a52c27b133c78481" target="_blank"><span class="fab fa-github"></span></a></h5>
+								<p class="text-left"><strong>Better Error Messages:</strong> Popups will now appear to warn you about common mistakes.
+								<br>Separated Directional Light from the Control prefab.
+								<br>Zoomed out the 2D Camera prefab.</p>
 								<hr class="mb-5">
 								<h5><strong>Hello Mario Framework v1.0</strong> (February 11, 2024) <a title="View on GitHub" href="https://github.com/HelloFangaming/HelloMarioFramework/commit/9e43452c19a3e132a640089bfd36cfc044f40477" target="_blank"><span class="fab fa-github"></span></a></h5>
 								<p class="text-left"><strong>Initial Release</strong></p>
@@ -298,8 +303,8 @@
 		<!-- Github Download Counter -->
 		<script>
 		$(function() {
-			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/150948888", function(result){$("#dl-source").text(result.download_count + " downloads.");});
-			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/150949029", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
+			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/158013985", function(result){$("#dl-source").text(result.download_count + " downloads.");});
+			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/158014075", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
 		});
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
