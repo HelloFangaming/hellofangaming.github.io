@@ -484,27 +484,3 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
-
-.hma-bg {
-    background-image: url("../img/bg.webp");
-}
-
-.hmf-bg {
-    background-image: url("../img/bg_hmf.webp");
-}
-
-.hme-bg {
-    background-image: url("../img/bg_hme.png");
-}
-
-.hme-sc {
-    background-image: url("../img/showcase_hme.png");
-}
-
-.im-bg {
-    background-image: url("../img/bg_im.webp");
-}
-
-.me-bg {
-    background-image: url("../img/editor.png");
-}
