@@ -111,7 +111,7 @@
 							<div class="feature-item" style="max-width: 450px;">
 								<i class="fab fa-unity text-primary"></i>
 								<h3>Hello Mario Framework</h3>
-								<p class="text-muted text-justify">Unity project folder. Designed for Unity 2022.3 LTS and above.</p>
+								<p class="text-muted text-justify">Unity project folder. Designed for Unity 2022.3 and above.</p>
 								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.1/Hello.Mario.Framework.v1.0.1.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
 								<p id="dl-source" class="text-muted font-italic mt-2"></p>
 							</div>
@@ -136,6 +136,22 @@
 								<hr class="mb-5">
 								<h5><strong>Hello Mario Framework v1.0</strong> (February 11, 2024) <a title="View on GitHub" href="https://github.com/HelloFangaming/HelloMarioFramework/commit/9e43452c19a3e132a640089bfd36cfc044f40477" target="_blank"><span class="fab fa-github"></span></a></h5>
 								<p class="text-left"><strong>Initial Release</strong></p>
+							</div>
+						</div>
+						<div class="col-lg-12 text-center mb-5">
+							<a href="#oldversions" class="btn btn-secondary btn-xl" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="oldversions"><span class="fas fa-history"></span> Old Versions</a>
+							<div class="collapse" id="oldversions">
+								<div class="alert alert-warning text-left mt-5" role="alert">
+									<span class="fa fa-triangle-exclamation"></span>
+									WARNING: Importing this package into a Hello Mario Framework project can cause problems! It is recommended to import the package to a separate project, and copy over what you need.
+								</div>
+								<div class="feature-item legacy">
+									<i class="fab fa-unity text-primary"></i>
+									<h3>Hello Mario Assets</h3>
+									<p class="text-justify">Unity package file. Designed for Unity 2019.4 and above. From within a Unity project, click Assets > Import Package > Custom Package, and choose the HelloMarioAssets.unitypackage file.</p>
+									<a href="https://github.com/HelloFangaming/HelloMarioAssets/releases/download/1.0/HelloMarioAssets.unitypackage" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
+									<p id="dl-assets" class="text-muted font-italic mt-2"></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -309,6 +325,7 @@
 		$(function() {
 			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/158013985", function(result){$("#dl-source").text(result.download_count + " downloads.");});
 			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/158014075", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
+			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioAssets/releases/assets/25978264", function(result){$("#dl-assets").text(result.download_count + " downloads.");});
 		});
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
