@@ -168,3 +168,10 @@ footer {
 	color: white;
 	background-color: black;
 }
+
+.hf-icon {
+	width:24px;
+	height:24px;
+	display:inline-block !important;
+	margin-top:-4px;
+}
