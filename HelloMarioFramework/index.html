@@ -6,6 +6,7 @@
 		<meta name="keywords" content="hello mario framework, unity, super mario">
 		<meta name="description" content="Create your own 3D Mario game with Hello Mario Framework for Unity! Zero programming experience needed! This open source Mario framework is feature packed with tons of items and enemies, and is bundled with open source level design tools that will let you easily create levels and build the 3D Mario game of your dreams!">
 		<meta name="author" content="Hello Fangaming">
+		<meta property="og:title" content="Hello Mario Framework" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<title>Hello Mario Framework - Create Your Own 3D Mario Game!</title>
 		<!-- Bootstrap core CSS -->
@@ -280,13 +281,15 @@
 			</div>
 		</section>
 		<section class="features" id="comments">
-			<div class="container">
+			<div class="container text-center">
 				<div class="section-heading text-center">
 					<h2>Comments</h2>
 					<p class="text-muted">Leave your feedback here!</p>
 					<hr>
 				</div>
 				<hr>
+				<div class="centered giscus"></div>
+				<a class="btn btn-dark btn-xl" onclick="loadDisqus();style.display='none'"><span class="fas fa-history"></span> Load Old Comments</a>
 				<div id="disqus_thread" class="centered"></div>
 				<hr>
 			</div>
@@ -336,18 +339,35 @@
 		gtag('js', new Date());
 		gtag('config', 'G-2M3SSEVX2Y');
 		</script>
+		<!-- Load Giscus Comments -->
+		<script src="https://giscus.app/client.js"
+			data-repo="HelloFangaming/hellofangaming.github.io"
+			data-repo-id="MDEwOlJlcG9zaXRvcnkzODE0NTAzOQ=="
+			data-category="giscus"
+			data-category-id="DIC_kwDOAkYMD84CoJ_6"
+			data-mapping="og:title"
+			data-strict="1"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="light"
+			data-lang="en"
+			data-loading="lazy"
+			crossorigin="anonymous"
+			async>
+		</script>
 		<!-- Load Disqus Comments -->
 		<script>
 		var disqus_config = function (){
 			this.page.url = "http://hellofangaming.github.io/HelloMarioFramework/";
 			this.page.identifier = "HELLOMARIOFRAMEWORK";
 		};
-		(function(){
+		function loadDisqus(){
 			var d = document, s = d.createElement('script');
 			s.src = '//hellofangaming.disqus.com/embed.js';
 			s.setAttribute('data-timestamp', +new Date());
 			(d.head || d.body).appendChild(s);
-		})();
+		}
 		</script>
 	</body>
 </html>
