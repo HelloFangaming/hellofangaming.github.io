@@ -281,7 +281,7 @@
 			</div>
 		</section>
 		<section class="features" id="comments">
-			<div class="container text-center">
+			<div class="container">
 				<div class="section-heading text-center">
 					<h2>Comments</h2>
 					<p class="text-muted">Leave your feedback here!</p>
@@ -289,8 +289,6 @@
 				</div>
 				<hr>
 				<div class="centered giscus"></div>
-				<a class="btn btn-dark btn-xl" onclick="loadDisqus();style.display='none'"><span class="fas fa-history"></span> Load Old Comments</a>
-				<div id="disqus_thread" class="centered"></div>
 				<hr>
 			</div>
 		</section>
@@ -355,19 +353,6 @@
 			data-loading="lazy"
 			crossorigin="anonymous"
 			async>
-		</script>
-		<!-- Load Disqus Comments -->
-		<script>
-		var disqus_config = function (){
-			this.page.url = "http://hellofangaming.github.io/HelloMarioFramework/";
-			this.page.identifier = "HELLOMARIOFRAMEWORK";
-		};
-		function loadDisqus(){
-			var d = document, s = d.createElement('script');
-			s.src = '//hellofangaming.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		}
 		</script>
 	</body>
 </html>

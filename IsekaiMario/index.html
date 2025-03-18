@@ -6,6 +6,7 @@
 		<meta name="keywords" content="anime, isekai, super mario, weeaboo, crossover">
 		<meta name="description" content="Mario and anime come together as one in Isekai Mario, the ultimate anime crossover!">
 		<meta name="author" content="Hello Fangaming">
+		<meta property="og:title" content="Isekai Mario" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<title>Isekai Mario - The Ultimate Anime Crossover!</title>
 		<!-- Bootstrap core CSS -->
@@ -548,7 +549,7 @@
 					<hr>
 				</div>
 				<hr>
-				<div id="disqus_thread" class="centered"></div>
+				<div class="centered giscus"></div>
 				<hr>
 			</div>
 		</section>
@@ -693,18 +694,22 @@
 		gtag('js', new Date());
 		gtag('config', 'G-2M3SSEVX2Y');
 		</script>
-		<!-- Load Disqus Comments -->
-		<script>
-		var disqus_config = function (){
-			this.page.url = "http://hellofangaming.github.io/IsekaiMario/";
-			this.page.identifier = "ISEKAIMARIO";
-		};
-		(function(){
-			var d = document, s = d.createElement('script');
-			s.src = '//hellofangaming.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
+		<!-- Load Giscus Comments -->
+		<script src="https://giscus.app/client.js"
+			data-repo="HelloFangaming/hellofangaming.github.io"
+			data-repo-id="MDEwOlJlcG9zaXRvcnkzODE0NTAzOQ=="
+			data-category="giscus"
+			data-category-id="DIC_kwDOAkYMD84CoJ_6"
+			data-mapping="og:title"
+			data-strict="1"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="light"
+			data-lang="en"
+			data-loading="lazy"
+			crossorigin="anonymous"
+			async>
 		</script>
 		<!-- Game Schema -->
 		<script type="application/ld+json">

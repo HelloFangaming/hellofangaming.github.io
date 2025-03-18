@@ -6,6 +6,7 @@
 		<meta name="keywords" content="hello mario engine, hello engine, gamemaker studio, super mario">
 		<meta name="description" content="Hello Mario Engine is an open source Mario engine that you can use with GameMaker: Studio for free to create your own Mario games.">
 		<meta name="author" content="Hello Fangaming">
+		<meta property="og:title" content="Hello Mario Engine" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<title>Hello Mario Engine - Create Your Own Mario Game!</title>
 		<!-- Bootstrap core CSS -->
@@ -370,7 +371,7 @@
 					<hr>
 				</div>
 				<hr>
-				<div id="disqus_thread" class="centered"></div>
+				<div class="centered giscus"></div>
 				<hr>
 			</div>
 		</section>
@@ -405,18 +406,22 @@
 		gtag('js', new Date());
 		gtag('config', 'G-2M3SSEVX2Y');
 		</script>
-		<!-- Load Disqus Comments -->
-		<script>
-		var disqus_config = function (){
-			this.page.url = "http://hellofangaming.github.io/HelloMarioEngine/";
-			this.page.identifier = "HELLOMARIOENGINE";
-		};
-		(function(){
-			var d = document, s = d.createElement('script');
-			s.src = '//hellofangaming.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
+		<!-- Load Giscus Comments -->
+		<script src="https://giscus.app/client.js"
+			data-repo="HelloFangaming/hellofangaming.github.io"
+			data-repo-id="MDEwOlJlcG9zaXRvcnkzODE0NTAzOQ=="
+			data-category="giscus"
+			data-category-id="DIC_kwDOAkYMD84CoJ_6"
+			data-mapping="og:title"
+			data-strict="1"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="light"
+			data-lang="en"
+			data-loading="lazy"
+			crossorigin="anonymous"
+			async>
 		</script>
 	</body>
 </html>
