@@ -27,7 +27,7 @@
 				<a class="nav-link js-scroll-trigger" href="#news">News</a>
 				<a class="nav-link js-scroll-trigger hide-me" href="#roadmap">Roadmap</a>
 				<a class="nav-link js-scroll-trigger" href="#scenarios">Scenarios</a>
-				<a class="nav-link js-scroll-trigger" href="#timecapsule">Time Capsule</a>
+				<a class="nav-link js-scroll-trigger" href="#more">More</a>
 			</div>
 		</nav>
 		<header class="masthead" style="background-image: url('img/bg/bg_im.webp');">
@@ -85,6 +85,8 @@
 					<hr class="mb-5">
 				</div>
 				<div class="container-fluid mb-5">
+					<h5><strong>May 31, 2025:</strong> Yoshi Tanks Kawaii is now available for download!</h5>
+					<hr class="mb-2">
 					<h5><strong>March 5, 2025:</strong> Hello Fangaming 20th Anniversary Time Capsule released!</h5>
 					<hr class="mb-2">
 					<h5><strong>March 22, 2024:</strong> Hello Mario Framework 1.0.1 update released!</h5>
@@ -221,30 +223,53 @@
 				</div>
 			</div>
 		</section>
-		<section class="editor text-center" style="background-image: url('img/bg/bg_hmf.webp');overflow:hidden;">
-			<div class="row justify-content-center">
-				<div class="col-xl-5">
-					<img class="img-fluid mb-5" src="img/logo_hmf.png" style="width:90%;">
-					<hr class="mb-2">
-					<p>Making your own 3D Mario game has never been this easy! Check out Hello Mario Framework for Unity, and create your very own 3D Mario game today!</p>
-					<hr>
-					<a href="https://hellofangaming.github.io/HelloMarioFramework/" target="_blank" class="btn btn-info btn-xl"><span class="fas fa-star"></span> Learn More</a>
-				</div>
+		<div id="more" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<section class="carousel-item active bg-primary text-center h-100" style="background:#222222!important;overflow:hidden;" data-interval="10000">
+					<div class="row justify-content-center">
+						<div class="col-xl-8">
+							<img class="img-fluid mb-5 mt-3" src="img/logo_timecapsule.png" style="width:90%;">
+							<hr class="mb-2">
+							<p>Check out Hello Fangaming's <em>kurorekishi</em> of Mario games.</p>
+							<hr>
+							<a href="https://hellofangaming.github.io/TimeCapsule/" target="_blank" class="btn btn-light btn-xl"><span class="fas fa-star"></span> Learn More</a>
+							<hr>
+							<i class="blockquote"><strong>Kurorekishi (黒歴史, くろれきし, dark history)</strong> An embarrassing past.</i>
+						</div>
+					</div>
+				</section>
+				<section class="carousel-item editor text-center h-100" style="background-image: url('img/bg/bg_ytk.webp');overflow:hidden;">
+					<div class="row justify-content-center">
+						<div class="col-xl-4">
+							<img class="img-fluid mb-2" src="img/logo_ytkawaii.png" style="width:90%;">
+							<hr>
+							<p><strong>Play as up to six different Yoshi Tank Girls and use a variety of different powerups as you fire away at your opponents in this multiplayer turn-based artillery game!</strong></p>
+							<hr>
+							<a href="https://hellofangaming.github.io/YoshiTanksKawaii/" target="_blank" class="btn btn-warning btn-xl"><span class="fas fa-star"></span> Learn More</a>
+						</div>
+					</div>
+				</section>
+				<section class="carousel-item editor text-center h-100" style="background-image: url('img/bg/bg_hmf.webp');overflow:hidden;">
+					<div class="row justify-content-center">
+						<div class="col-xl-5">
+							<img class="img-fluid mb-5" src="img/logo_hmf.png" style="width:90%;">
+							<hr class="mb-2">
+							<p><strong>Making your own 3D Mario game has never been this easy! Check out Hello Mario Framework for Unity, and create your very own 3D Mario game today!</strong></p>
+							<hr>
+							<a href="https://hellofangaming.github.io/HelloMarioFramework/" target="_blank" class="btn btn-info btn-xl"><span class="fas fa-star"></span> Learn More</a>
+						</div>
+					</div>
+				</section>
 			</div>
-		</section>
-		<section class="bg-primary text-center" style="background:#222222!important;overflow:hidden;" id="timecapsule">
-			<div class="row justify-content-center">
-				<div class="col-xl-8">
-					<img class="img-fluid mb-5" src="img/logo_timecapsule.png" style="width:90%;">
-					<hr class="mb-2">
-					<p>Check out Hello Fangaming's <em>kurorekishi</em> of Mario games.</p>
-					<hr>
-					<a href="https://hellofangaming.github.io/TimeCapsule/" target="_blank" class="btn btn-light btn-xl"><span class="fas fa-star"></span> Learn More</a>
-					<hr>
-					<i class="blockquote"><strong>Kurorekishi (黒歴史, くろれきし, dark history)</strong> An embarrassing past.</i>
-				</div>
-			</div>
-		</section>
+			<a class="carousel-control-prev" href="#more" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#more" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 		<section class="features">
 			<div class="container">
 				<div class="section-heading text-center">
@@ -277,6 +302,22 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-2M3SSEVX2Y');
+		</script>
+		<!-- Set Carousel Height -->
+		<script>
+		function setCarouselHeight() {
+			var maxHeight = 0;
+			var carouselItems = document.querySelectorAll('.carousel-item');
+			carouselItems.forEach(function(item) {
+				item.style.display = 'block';
+				var height = item.offsetHeight;
+				if (height > maxHeight) maxHeight = height;
+				item.style.display = '';
+			});
+			document.querySelector('.carousel-inner').style.height = maxHeight + 'px';
+		}
+		window.addEventListener('load', setCarouselHeight);
+		window.addEventListener('resize', setCarouselHeight);
 		</script>
 	</body>
 </html>
