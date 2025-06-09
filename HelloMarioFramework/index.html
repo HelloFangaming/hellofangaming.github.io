@@ -74,7 +74,7 @@
 							<p class="text-justify">If you do not already have Unity installed, go to the Unity website, and download Unity Hub. Unity Personal is free to use.<span class="hide-me"><br> </span></p>
 						</div>
 						<hr>
-						<a href="https://store.unity.com/download?ref=personal" class="btn btn-success btn-xl js-scroll-trigger"><span class="fas fa-download"></span> Download Unity Hub</a>
+						<a href="https://unity.com/download" target="_blank" class="btn btn-success btn-xl js-scroll-trigger"><span class="fas fa-download"></span> Download Unity Hub</a>
 						<hr>
 					</div>
 					<div class="col-lg-4">
@@ -82,7 +82,7 @@
 							<div class="icon-outline">
 								<span>2</span>
 							</div>
-							<p class="text-justify">Open Unity Hub. In the Installs tab, if you don't already have Unity 2022.3 LTS installed, click the Add button, and install it. In the Add modules section, everything is optional, so pick whatever you want, or uncheck everything to save space.</p>
+							<p class="text-justify">Open Unity Hub. In the Installs tab, if you don't already have Unity 2022.3.62 installed, click the Add button, and install it. In the Add modules section, everything is optional, so pick whatever you want, or uncheck everything to save space.</p>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -103,7 +103,7 @@
 			<div class="container">
 				<div class="section-heading text-center">
 					<h2>Download</h2>
-					<p class="text-muted">Latest version: v1.0.1</p>
+					<p class="text-muted">Latest version: v1.0.2</p>
 					<hr>
 				</div>
 				<div class="container-fluid mb-5">
@@ -112,8 +112,8 @@
 							<div class="feature-item" style="max-width: 450px;">
 								<i class="fab fa-unity text-primary"></i>
 								<h3>Hello Mario Framework</h3>
-								<p class="text-muted text-justify">Unity project folder. Designed for Unity 2022.3 and above.</p>
-								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.1/Hello.Mario.Framework.v1.0.1.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
+								<p class="text-muted text-justify">Unity project folder. Designed for Unity 2022.3.62. Extract, then open the folder with Unity Hub.</p>
+								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.2/Hello.Mario.Framework.v1.0.2.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
 								<p id="dl-source" class="text-muted font-italic mt-2"></p>
 							</div>
 						</div>
@@ -122,13 +122,16 @@
 								<i class="fab fa-windows text-primary"></i>
 								<h3>Hello Mario Framework Demo</h3>
 								<p class="text-muted text-justify">EXE demo for Windows. Showcases the various features included in the Hello Mario Framework.</p>
-								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.1/Hello.Mario.Framework.Demo.v1.0.1.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
+								<a href="https://github.com/HelloFangaming/HelloMarioFramework/releases/download/v1.0.2/Hello.Mario.Framework.Demo.v1.0.2.zip" target="_blank" class="btn btn-success btn-xl"><span class="fas fa-download"></span> Download</a>
 								<p id="dl-preview" class="text-muted font-italic mt-2"></p>
 							</div>
 						</div>
 						<div class="col-lg-12 text-center mb-5">
 							<a href="#changelog" class="btn btn-info btn-xl" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="changelog"><span class="fas fa-clock"></span> Changelog</a>
 							<div class="collapse text-left" id="changelog">
+								<hr class="mb-5">
+								<h5><strong>Hello Mario Framework v1.0.2</strong> (June 8, 2025) <a title="View on GitHub" href="https://github.com/HelloFangaming/HelloMarioFramework/commit/82dfefaba812ad141a49b4d15323a97484785ed3" target="_blank"><span class="fab fa-github"></span></a></h5>
+								<p class="text-left">This update adds a <strong>40 FPS option</strong>, and includes various <strong>bug fixes</strong>. Using Unity 2022.3 is recommended due to issues with RealtimeCSG in newer versions, but you can still update Unity if you want. (Recommended for advanced users only!)</p>
 								<hr class="mb-5">
 								<h5><strong>Hello Mario Framework v1.0.1</strong> (March 22, 2024) <a title="View on GitHub" href="https://github.com/HelloFangaming/HelloMarioFramework/commit/aabd7dd24ad1908ee8e18b46a52c27b133c78481" target="_blank"><span class="fab fa-github"></span></a></h5>
 								<p class="text-left"><strong>Better Error Messages:</strong> Popups will now appear to warn you about common mistakes.
@@ -325,8 +328,8 @@
 		<!-- Github Download Counter -->
 		<script>
 		$(function() {
-			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/158013985", function(result){$("#dl-source").text(result.download_count + " downloads.");});
-			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/158014075", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
+			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/262200819", function(result){$("#dl-source").text(result.download_count + " downloads.");});
+			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioFramework/releases/assets/262200766", function(result){$("#dl-preview").text(result.download_count + " downloads.");});
 			$.getJSON("https://api.github.com/repos/HelloFangaming/HelloMarioAssets/releases/assets/25978264", function(result){$("#dl-assets").text(result.download_count + " downloads.");});
 		});
 		</script>
