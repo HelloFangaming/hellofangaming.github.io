@@ -106,6 +106,10 @@
 					<p class="text-muted">Latest version: v1.0.2</p>
 					<hr>
 				</div>
+				<div class="alert alert-warning" role="alert">
+					<span class="fa fa-triangle-exclamation"></span>
+					RealtimeCSG, the level design tool included with the framework, is known to have issues with newer versions of Unity. Using Unity 2022.3.62 is recommended unless you know what you're doing.
+				</div>
 				<div class="container-fluid mb-5">
 					<div class="row">
 						<div class="col-lg-6">
@@ -145,9 +149,9 @@
 						<div class="col-lg-12 text-center mb-5">
 							<a href="#oldversions" class="btn btn-dark btn-xl" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="oldversions"><span class="fas fa-history"></span> Old Versions</a>
 							<div class="collapse" id="oldversions">
-								<div class="alert alert-warning text-left mt-5" role="alert">
-									<span class="fa fa-triangle-exclamation"></span>
-									WARNING: Importing this package into a Hello Mario Framework project can cause problems! It is recommended to import the package to a separate project, and copy over what you need.
+								<div class="alert alert-danger text-left mt-5" role="alert">
+									<span class="fa fa-exclamation-circle"></span>
+									Importing this package into a Hello Mario Framework project will cause problems! Please import the package into a separate project, and copy over what you need.
 								</div>
 								<div class="feature-item legacy">
 									<i class="fab fa-unity text-primary"></i>
