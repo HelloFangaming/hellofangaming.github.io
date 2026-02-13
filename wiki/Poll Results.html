@@ -46,7 +46,11 @@
 			<div class="col-lg-12">
 				<h1 class="page-header">Poll Results</h1>
 				<p>You can see the results for old polls that used to be on the front page of the Hello Fangaming website here.</p>
-				<iframe src="../pollresults.html" width="100%" height="600px" frameborder="0"></iframe>
+				<br>
+				<select id="pollselector" class="form-control"></select>
+				<hr>
+				<div id="piechart" class="jumbotron" style="height:500px;background-color:white;padding-top:0px;"></div>
+				<h4 style="text-align:center;">Total Votes: <span id="votes"></span></h4>
 			</div>
 		</div>
 		<!-- /.row -->
@@ -75,6 +79,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M3SSEVX2Y"></script>
@@ -101,6 +108,57 @@
 		data-loading="lazy"
 		crossorigin="anonymous"
 		async>
+	</script>
+	
+	<!-- Load Poll Results -->
+	<script src="../js/piechart.min.js"></script>
+	<script type="text/javascript">
+	//Global
+	var pollresults = undefined;
+	
+	//Pie chart update
+	var update = function(poll) {
+		var thepoll = pollresults[poll];
+		$("#votes").text(thepoll.total);
+		
+		//Pie chart
+		var chart = PieCharts.makeChart("piechart", {
+			"type": "pie",
+			"theme": "light",
+			"dataProvider": thepoll.results,
+			"valueField": "vote",
+			"titleField": "answer",
+			"balloon":{
+				"fixedPosition":true
+			},
+			"export": {
+				"enabled": true
+			}
+		});
+	}
+	
+	//Start
+	$( document ).ready(function() {
+	
+		//JSON LOAD
+		$.getJSON("../pollresults.json", function(result){
+			pollresults = result.pollresults;
+			$.each(pollresults, function(index, value){
+				$('#pollselector')
+					.append($("<option></option>")
+					.attr("value",index)
+					.text(value.question));
+				$("#test").append(index+value.question);
+			});
+			setTimeout(function(){ update(0); }, 500);
+		});
+		
+		//Select Update
+		$("#pollselector").change(function(){
+			update($(this).val());
+		});
+
+	});
 	</script>
 
 </body>
