@@ -12,11 +12,11 @@
 	<title>Poll Results - Hello Fangaming</title>
 
 	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@3.4.1/darkly/bootstrap.min.css" integrity="sha256-3ENdQmzAZ/ZJ/5vCIpqVRiaOQQwGDT0qDyLL/b0D+GY=" crossorigin="anonymous">
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<!-- Wiki CSS -->
-	<link rel="stylesheet" href="styles_wiki.css">
+	<link rel="stylesheet" href="styles_wiki.min.css">
 
 </head>
 
@@ -35,12 +35,6 @@
 
 	<!-- Page Content -->
 	<div class="container fullheight">
-	
-		<ol class="breadcrumb">
-			<li><a href="/wiki/">Wiki</a></li>
-			<li><a href="/wiki/#other">Other</a></li>
-			<li class="active">Poll Results</li>
-		</ol>
 		
 		<div class="alert alert-warning" role="alert">
 			<span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
@@ -76,18 +70,11 @@
 		<div class="container">
 			<div class="row footer-in">
 				<div class="col-lg-12">
-					<p class="pull-right"><a class="glyphicon glyphicon-chevron-up smoothscroll" href="#top"></a></p>
 					<p><strong>2006-<script>var d = new Date(); document.write(d.getFullYear());</script> Hello Fangaming</strong></p>
 				</div>
 			</div>
 		</div>
 	</footer>
-
-	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M3SSEVX2Y"></script>
@@ -109,27 +96,11 @@
 		data-reactions-enabled="1"
 		data-emit-metadata="0"
 		data-input-position="top"
-		data-theme="light"
+		data-theme="noborder_dark"
 		data-lang="en"
 		data-loading="lazy"
 		crossorigin="anonymous"
 		async>
-	</script>
-	
-	<!-- Smooth Scroller -->
-	<script>
-	$(function() {
-		$('.smoothscroll').click(function() {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html,body').animate({
-				scrollTop: target.offset().top
-				}, 500);
-				return false;
-			}
-		});
-	});
 	</script>
 
 </body>

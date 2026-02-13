@@ -5,20 +5,11 @@ html {
 
 body {
 	margin-bottom: 60px;
-	font-family: Verdana, Geneva, sans-serif;
 }
 
 img {
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
-}
-
-a, a:active, a:focus {
-	outline: none;
-}
-
-a:hover, a:visited, a:link, a:active {
-	text-decoration: none;
 }
 
 .fullheight {
@@ -37,103 +28,23 @@ a:hover, a:visited, a:link, a:active {
 	filter: brightness(120%);
 }
 
-.wikibox {
-	text-align: center;
-	padding: 3em;
-}
-
-.wikibox-in {
-	background-color: #880000;
-	color: #ffffff;
-	padding: 16px;
-}
-
-.wikibox-in > i{
-	font-size: 500%;
-	margin-top: 16px;
-}
-
-.wikibox-in > p{
-	font-size: 130%;
-}
-
 /* Header Styles */
 
 .navbar-default {
-	background-color: #222222;
-	border-color: #222222;
-	border-radius: 0 !important;
-}
-
-.navbar-default .navbar-brand {
-	color: #ffffff;
+	background-color: #D50000;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #aaaaaa;
-}
-
-.navbar-default .navbar-text {
 	color: #ffffff;
 }
 
-.navbar-default .navbar-nav > li > a {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #aaaaaa;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #aaaaaa;
-	background-color: #660000;
-}
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #aaaaaa;
-	background-color: #660000;
-}
-
-.navbar-default .navbar-toggle {
-	border-color: #660000;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #660000;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ffffff;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	border-color: #ffffff;
-}
-
-.navbar-default .navbar-link {
-	color: #ffffff;
-}
-
-.navbar-default .navbar-link:hover {
-	color: #aaaaaa;
+.navbar-default > .container {
+	display: flex;
+	justify-content: center;
 }
 
 .modal-dialog {
     min-width: 70%;
-}
-
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #ffffff;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #aaaaaa;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #aaaaaa;
-		background-color: #660000;
-	}
 }
 
 /* Footer Styles */
@@ -145,18 +56,16 @@ a:hover, a:visited, a:link, a:active {
 
 .footer-in a {
 	color: #ffffff;
-}
-
-.footer-in a:hover {
-	color: #aaaaaa;
+	text-decoration: none;
 }
 
 footer {
 	position: absolute;
 	bottom: 0;
-	background-color: #222222;
+	background-color: #D50000;
 	height: 60px;
 	width: 100%;
+	text-align: center;
 }
 
 /* Promo Banners */
